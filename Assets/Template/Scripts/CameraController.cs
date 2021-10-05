@@ -16,19 +16,19 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && transform.position.z >= -2)
         {
             transform.position += (-Vector3.forward * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) && transform.position.z <= 58)
         {
             transform.position += (Vector3.forward * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && transform.position.x >= -10)
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x < 10)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
