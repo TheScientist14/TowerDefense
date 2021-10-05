@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class TurretBehaviour : MonoBehaviour
 {
+    public GameObject canon;
     public GameObject bullet;
     private BulletComponent bulletBehaviour;
 
@@ -25,7 +26,7 @@ public class TurretBehaviour : MonoBehaviour
     void Start()
     {
         fireRate = 2f;
-        timer = 0;
+        timer = 0f;
         trigger = GetComponent<CapsuleCollider>();
         trigger.radius = range;
         bulletBehaviour = bullet.GetComponent<BulletComponent>();
@@ -36,17 +37,16 @@ public class TurretBehaviour : MonoBehaviour
     {
         if (target != null)
         {
-            double dist = (transform.position - target.transform.position).magnitude;
-            double bulletSpeed = bulletBehaviour.speed / 50;
+            double dist = (canon.transform.position - target.transform.position).magnitude;
+            double bulletSpeed = bulletBehaviour.speed;
             double timeBullet = dist / bulletSpeed;
-            //targetNavMeshAgent.speed;
-            transform.LookAt(target.transform);
+            transform.LookAt(target.transform.position + ((float)timeBullet*targetNavMeshAgent.speed)*target.transform.forward);
         }
-        if(timer <= 0 && target != null)
+        if(timer <= 0f && target != null)
         {
-            bulletFired = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
+            bulletFired = Instantiate(bullet, canon.transform.position, transform.rotation) as GameObject;
             Destroy(bulletFired, 5f);
-            timer = 1 / fireRate;
+            timer = 1f / fireRate;
         }
         else
         {
@@ -60,10 +60,7 @@ public class TurretBehaviour : MonoBehaviour
      */
     void OnTriggerEnter(Collider target)
     {
-        if (this.target == null)
-        {
-            TargetCollider(target);
-        }
+        TargetCollider(target);
     }
 
     private void OnTriggerExit(Collider other)
@@ -76,18 +73,21 @@ public class TurretBehaviour : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(target == null)
-        {
-            TargetCollider(other);
-        }
+        TargetCollider(other);
     }
 
     private void TargetCollider(Collider target)
     {
-        if (target.gameObject.CompareTag("Enemy"))
+        if (this.target == null)
         {
-            this.target = target.gameObject;
-            targetNavMeshAgent = target.GetComponent<NavMeshAgent>();
+            if (target.gameObject.CompareTag("Enemy"))
+            {
+                this.target = target.gameObject;
+                targetNavMeshAgent = target.GetComponent<NavMeshAgent>();
+                
+            }
         }
     }
+
+    //TODO manage death of target
 }

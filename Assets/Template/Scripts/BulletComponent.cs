@@ -20,9 +20,9 @@ public class BulletComponent : MonoBehaviour
     {
         if(accelerationTimer > 0)
         {
-            rb.AddForce(transform.forward * speed, ForceMode.Acceleration);
+            rb.AddForce(transform.forward * speed * 50f, ForceMode.Acceleration);
+            // 50f to get the same speed value as in the variable
             accelerationTimer--;
-            Debug.Log(this.rb.velocity);
         }
     }
 }
