@@ -12,6 +12,7 @@ public class ThiefBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        helicopter = GameObject.Find("Helicopter");
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = helicopter.transform.position;
     }
