@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class TurretBehaviour : MonoBehaviour
 {
     public GameObject bullet;
-    public GameObject enemy;
+    private BulletComponent bulletBehaviour;
 
     private float fireRate; // bullet per second
     private float damageValue; // of the bullets fired
-    private float range; // of detection of enemies
+    private float range = 20; // of detection of enemies
     private GameObject target; // target to fire on
+    private NavMeshAgent targetNavMeshAgent;
 
     private CapsuleCollider trigger;
 
@@ -26,14 +28,22 @@ public class TurretBehaviour : MonoBehaviour
         timer = 0;
         trigger = GetComponent<CapsuleCollider>();
         trigger.radius = range;
+        bulletBehaviour = bullet.GetComponent<BulletComponent>();
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
+        if (target != null)
+        {
+            double dist = (transform.position - target.transform.position).magnitude;
+            double bulletSpeed = bulletBehaviour.speed / 50;
+            double timeBullet = dist / bulletSpeed;
+            //targetNavMeshAgent.speed;
+            transform.LookAt(target.transform);
+        }
         if(timer <= 0 && target != null)
         {
-            transform.LookAt(target.transform);
             bulletFired = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
             Destroy(bulletFired, 5f);
             timer = 1 / fireRate;
@@ -50,12 +60,12 @@ public class TurretBehaviour : MonoBehaviour
      */
     void OnTriggerEnter(Collider target)
     {
-        if(this.target != null)
+        if (this.target == null)
         {
             TargetCollider(target);
         }
     }
-    
+
     private void OnTriggerExit(Collider other)
     {
         if (other == target)
@@ -77,6 +87,7 @@ public class TurretBehaviour : MonoBehaviour
         if (target.gameObject.CompareTag("Enemy"))
         {
             this.target = target.gameObject;
+            targetNavMeshAgent = target.GetComponent<NavMeshAgent>();
         }
     }
 }
