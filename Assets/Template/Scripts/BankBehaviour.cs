@@ -26,7 +26,7 @@ public class BankBehaviour : MonoBehaviour
         time += Time.deltaTime;
         if (timer <= 0)
         {
-            thief = Instantiate(thief, transform.position + new Vector3(0, 0, 6), new Quaternion()) as GameObject;
+            Instantiate(thief, transform.position + new Vector3(0, 0, 6), new Quaternion());
             timer = 1 / spawnRate;
         }
         else
