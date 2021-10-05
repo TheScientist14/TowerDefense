@@ -5,14 +5,16 @@ using UnityEngine;
 public class TurretBehaviour : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject enemy;
 
     private float fireRate; // bullet per second
     private float damageValue; // of the bullets fired
     private float range; // of detection of enemies
+    private GameObject target; // target to fire on
+
+    private CapsuleCollider trigger;
 
     //testing
-    private Vector3 rotationSpeed = new Vector3(0, 45, 0);
-    private float time = 0;
     private GameObject bulletFired;
 
     private float timer;
@@ -22,15 +24,16 @@ public class TurretBehaviour : MonoBehaviour
     {
         fireRate = 2f;
         timer = 0;
+        trigger = GetComponent<CapsuleCollider>();
+        trigger.radius = range;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        time += Time.deltaTime;
-        transform.rotation = Quaternion.Euler(rotationSpeed * time);
-        if(timer <= 0)
+    {   
+        if(timer <= 0 && target != null)
         {
+            transform.LookAt(target.transform);
             bulletFired = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
             Destroy(bulletFired, 5f);
             timer = 1 / fireRate;
@@ -38,6 +41,42 @@ public class TurretBehaviour : MonoBehaviour
         else
         {
             timer -= Time.deltaTime;
+        }
+    }
+
+    /*
+     * Target the first enemy within the reach of the turret,
+     * stop targeting if out of range and target any enemy in range
+     */
+    void OnTriggerEnter(Collider target)
+    {
+        if(this.target != null)
+        {
+            TargetCollider(target);
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other == target)
+        {
+            target = null;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(target == null)
+        {
+            TargetCollider(other);
+        }
+    }
+
+    private void TargetCollider(Collider target)
+    {
+        if (target.gameObject.CompareTag("Enemy"))
+        {
+            this.target = target.gameObject;
         }
     }
 }
