@@ -42,4 +42,13 @@ public class BulletComponent : MonoBehaviour
     {
         this.speed = speed;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.GetComponent<ThiefBehaviour>().GetDamage(damageValue);
+            Destroy(gameObject);
+        }
+    }
 }

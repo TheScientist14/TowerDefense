@@ -10,7 +10,7 @@ public class TurretBehaviour : MonoBehaviour
     private BulletComponent bulletBehaviour;
 
     private float fireRate; // bullet per second
-    private int damageValue; // of the bullets fired
+    private int damageValue = 2; // of the bullets fired
     private float bulletSpeed; // speed of the bullet
     private float range = 20; // of detection of enemies
     private GameObject target; // target to fire on
