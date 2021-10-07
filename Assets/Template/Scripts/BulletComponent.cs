@@ -6,6 +6,7 @@ public class BulletComponent : MonoBehaviour
 {
     public float speed;
     private int accelerationTimer = 1;
+    private int damageValue = 1;
 
     private Rigidbody rb;
 
@@ -24,5 +25,21 @@ public class BulletComponent : MonoBehaviour
             // 50f to get the same speed value as in the variable
             accelerationTimer--;
         }
+    }
+
+    public void SetDamageValue(int value)
+    {
+        damageValue = value;
+    }
+
+    public int GetDamageValue()
+    {
+        return damageValue;
+    }
+
+    // speed in meter per second
+    public void SetBulletSpeed(int speed)
+    {
+        this.speed = speed;
     }
 }

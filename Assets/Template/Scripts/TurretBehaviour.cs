@@ -10,7 +10,8 @@ public class TurretBehaviour : MonoBehaviour
     private BulletComponent bulletBehaviour;
 
     private float fireRate; // bullet per second
-    private float damageValue; // of the bullets fired
+    private int damageValue; // of the bullets fired
+    private float bulletSpeed; // speed of the bullet
     private float range = 20; // of detection of enemies
     private GameObject target; // target to fire on
     private NavMeshAgent targetNavMeshAgent;
@@ -30,6 +31,7 @@ public class TurretBehaviour : MonoBehaviour
         trigger = GetComponent<CapsuleCollider>();
         trigger.radius = range;
         bulletBehaviour = bullet.GetComponent<BulletComponent>();
+        //bulletBehaviour.
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class TurretBehaviour : MonoBehaviour
         if(timer <= 0f && target != null)
         {
             bulletFired = Instantiate(bullet, canon.transform.position, transform.rotation) as GameObject;
+            bulletFired.GetComponent<BulletComponent>().SetDamageValue(damageValue);
             Destroy(bulletFired, 5f);
             timer = 1f / fireRate;
         }
@@ -63,15 +66,15 @@ public class TurretBehaviour : MonoBehaviour
         TargetCollider(target);
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        if (other == target)
+        if (other.gameObject == target)
         {
             target = null;
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     {
         TargetCollider(other);
     }
