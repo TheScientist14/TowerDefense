@@ -10,9 +10,11 @@ public class ThiefBehaviour : MonoBehaviour
     private NavMeshAgent agent;
     private int health;
     private int healthMax;
+    private int damage;
     // Start is called before the first frame update
     void Start()
     {
+        damage = 1;
         health = 5;
         healthMax = health;
         helicopter = GameObject.Find("Helicopter");
@@ -33,5 +35,10 @@ public class ThiefBehaviour : MonoBehaviour
     {
         health -= damage;
         Debug.Log("Hit health = " + health);
+    }
+
+    public int PointLose()
+    {
+        return damage;
     }
 }

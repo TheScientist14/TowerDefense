@@ -14,6 +14,12 @@ public class HelicopterBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        GameObject Enemy = other.gameObject;
+        if (Enemy.CompareTag("Enemy"))
+        {
+            other.GetComponent<GameManagement>().GetDamage(Enemy.GetComponent<ThiefBehaviour>().PointLose());
+        }
+        Debug.Log("Point loose !! HP : " + GetComponent<GameManagement>().GetPlayerHealth());
+        Destroy(Enemy);
     }
 }
