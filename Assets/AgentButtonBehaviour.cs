@@ -20,9 +20,5 @@ public class AgentButtonBehaviour : MonoBehaviour
     {
         Debug.Log("Hello");
         GameObject turret = Instantiate(agent, cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y)), Quaternion.identity);
-        while (!Input.GetMouseButton(0))
-        {
-
-        }
     }
 }
