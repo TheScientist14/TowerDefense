@@ -7,7 +7,6 @@ public class HelicopterBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -17,9 +16,10 @@ public class HelicopterBehaviour : MonoBehaviour
         GameObject Enemy = other.gameObject;
         if (Enemy.CompareTag("Enemy"))
         {
-            other.GetComponent<GameManagement>().GetDamage(Enemy.GetComponent<ThiefBehaviour>().PointLose());
+            GameManagement.GetDamage(
+                Enemy.GetComponent<ThiefBehaviour>().PointLose()
+            );
         }
-        Debug.Log("Point loose !! HP : " + GetComponent<GameManagement>().GetPlayerHealth());
         Destroy(Enemy);
     }
 }

@@ -5,12 +5,13 @@ using UnityEngine;
 public class GameManagement : MonoBehaviour
 {
 
-    private int PlayerHealth;
+    private static int PlayerHealth;
+    private static int Money;
     // Start is called before the first frame update
     void Start()
     {
         PlayerHealth = 100;
-        
+        Money = 60;
     }
 
     // Update is called once per frame
@@ -22,14 +23,34 @@ public class GameManagement : MonoBehaviour
         }
     }
 
-    public void GetDamage(int damage)
+    public static void GetDamage(int damage)
     {
         PlayerHealth -= damage;
     }
 
-    public int GetPlayerHealth()
+    public static int GetPlayerHealth()
     {
         return PlayerHealth;
+    }
+
+    public static void AddMoney(int gain)
+    {
+        Money += gain;
+    }
+
+    public static void RemoveMoney(int remove)
+    {
+        Money -= remove;
+    }
+
+    public static int GetMoney()
+    {
+        return Money;
+    }
+
+    public static void SetMoney(int moneyToSet)
+    {
+        Money = moneyToSet;
     }
 }
 
