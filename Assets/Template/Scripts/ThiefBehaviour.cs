@@ -28,6 +28,7 @@ public class ThiefBehaviour : MonoBehaviour
         if ( health <= 0)
         {
             GameManagement.AddMoney(5);
+            GetComponent<TextManagement>().UpdateMoneyText();
             Destroy(gameObject);
         }
     }
