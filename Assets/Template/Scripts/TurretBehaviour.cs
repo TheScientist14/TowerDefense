@@ -91,6 +91,4 @@ public class TurretBehaviour : MonoBehaviour
             }
         }
     }
-
-    //TODO manage death of target
 }
