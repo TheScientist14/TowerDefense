@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class SelectionBehaviour : MonoBehaviour
 {
-    public GameObject selectedTurret = null;
+    public static GameObject selectedTurret = null;
 }
