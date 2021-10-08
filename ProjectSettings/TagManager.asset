@@ -8,6 +8,7 @@ TagManager:
   - Temp
   - Enemy
   - Bullet
+  - HealthBar
   layers:
   - Default
   - TransparentFX
