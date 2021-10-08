@@ -5,18 +5,20 @@ using TMPro;
 
 public class TextManagement : MonoBehaviour
 {
-    public TextMeshProUGUI TextMesh;
-    
+    public static TextManagement instance;
+    public TextMeshProUGUI LifeText;
+    public TextMeshProUGUI MoneyText;
+
     private void Awake()
     {
-        UpdateLifeText();
-        UpdateMoneyText();
+        instance = this;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateLifeText();
+        UpdateMoneyText();
     }
 
     // Update is called once per frame
@@ -27,11 +29,11 @@ public class TextManagement : MonoBehaviour
 
     public void UpdateLifeText()
     {
-        TextMesh.SetText("Life : " + GameManagement.GetPlayerHealth());
+        LifeText.SetText("Life : " + GameManagement.GetPlayerHealth());
     }
 
     public void UpdateMoneyText()
     {
-        TextMesh.SetText("Money : " + GameManagement.GetMoney());
+        MoneyText.SetText("Money : " + GameManagement.GetMoney());
     }
 }

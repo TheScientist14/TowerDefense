@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class GameManagement : MonoBehaviour
 {
+    private static int PlayerHealth = 100;
+    private static int Money = 50;
 
-    private static int PlayerHealth;
-    private static int Money;
     // Start is called before the first frame update
     void Start()
     {
