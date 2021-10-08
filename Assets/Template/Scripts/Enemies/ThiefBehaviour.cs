@@ -14,7 +14,7 @@ public class ThiefBehaviour : MonoBehaviour
     private int damage;
     public Slider healthBar;
     public Canvas canva;
-    private Camera camera;
+    private Camera cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class ThiefBehaviour : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.destination = helicopter.transform.position;
         healthBar.maxValue = health;
-        camera = Camera.main;
+        cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class ThiefBehaviour : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);*/
         //Quaternion rotation = Quaternion.LookRotation(camera.transform.position);
         //healthBar.transform.rotation = Quaternion.Euler(camera.transform.rotation.x, camera.transform.rotation.y, camera.transform.rotation.z);
-        canva.transform.LookAt(camera.transform);
+        canva.transform.LookAt(cam.transform);
         if ( health <= 0)
         {
             GameManagement.AddMoney(5);
