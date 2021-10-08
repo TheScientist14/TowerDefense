@@ -22,14 +22,12 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked");
         if (SelectionBehaviour.selectedTurret != null)
         {
-            Debug.Log("Placing selected turret");
-            if (currentTurret == null || currentTurret.GetType() == SelectionBehaviour.selectedTurret.GetType())
+            if (currentTurret == null || currentTurret.GetType() != SelectionBehaviour.selectedTurret.GetType())
             {
-                Debug.Log("Placed");
                 currentTurret = Instantiate(SelectionBehaviour.selectedTurret, transform.position, Quaternion.identity);
+                // lose money
             }
         }
     }
