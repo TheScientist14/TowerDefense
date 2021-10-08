@@ -7,6 +7,7 @@ public class TurretBehaviour : MonoBehaviour
 {
     public GameObject canon;
     public GameObject bullet;
+    public GameObject bulletsParent;
     private BulletComponent bulletBehaviour;
 
     private float fireRate; // bullet per second
@@ -46,7 +47,7 @@ public class TurretBehaviour : MonoBehaviour
         }
         if(timer <= 0f && target != null)
         {
-            bulletFired = Instantiate(bullet, canon.transform.position, transform.rotation, transform) as GameObject;
+            bulletFired = Instantiate(bullet, canon.transform.position, transform.rotation) as GameObject;
             bulletFired.GetComponent<BulletComponent>().SetDamageValue(damageValue);
             Destroy(bulletFired, 5f);
             timer = 1f / fireRate;

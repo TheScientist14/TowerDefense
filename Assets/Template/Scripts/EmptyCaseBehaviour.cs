@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EmptyCaseBehaviour : MonoBehaviour
 {
+    //public GameObject turretsParent;
+
     private GameObject currentTurret;
 
     // Start is called before the first frame update
@@ -20,11 +22,14 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("Clicked");
         if (SelectionBehaviour.selectedTurret != null)
         {
-            //if (currentTurret.class == SelectionBehaviour.selectedTurret.class)
+            Debug.Log("Placing selected turret");
+            if (currentTurret == null || currentTurret.GetType() == SelectionBehaviour.selectedTurret.GetType())
             {
-              //  currentTurret = Instantiate(SelectionBehaviour.selectedTurret, transform.position, Quaternion.identity);
+                Debug.Log("Placed");
+                currentTurret = Instantiate(SelectionBehaviour.selectedTurret, transform.position, Quaternion.identity);
             }
         }
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7274217931832301448}
   - component: {fileID: 1020702262532168039}
   - component: {fileID: 4472613015573537226}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CanonMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8723400233842585058}
   - component: {fileID: 1735131119807805886}
   - component: {fileID: 4123447695447987162}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TurretPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 7683995287882881458}
   - component: {fileID: 7683995287882881459}
   - component: {fileID: 7683995287882881456}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TurretMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
