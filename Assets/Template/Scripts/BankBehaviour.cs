@@ -23,15 +23,18 @@ public class BankBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if (timer <= 0)
+        if (GameManagement.IsGameStarted())
         {
-            spawn();
-            timer = 1 / spawnRate;
-        }
-        else
-        {
-            timer -= Time.deltaTime;
+            time += Time.deltaTime;
+            if (timer <= 0)
+            {
+                spawn();
+                timer = 1 / spawnRate;
+            }
+            else
+            {
+                timer -= Time.deltaTime;
+            }
         }
     }
 

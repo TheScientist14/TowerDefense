@@ -6,12 +6,14 @@ public class GameManagement : MonoBehaviour
 {
     private static int PlayerHealth = 100;
     private static int Money = 50;
+    private static bool GameStarted = false;
 
     // Start is called before the first frame update
     void Start()
     {
         PlayerHealth = 100;
-        Money = 60;
+        Money = 50;
+        GameStarted = false;
     }
 
     // Update is called once per frame
@@ -51,6 +53,16 @@ public class GameManagement : MonoBehaviour
     public static void SetMoney(int moneyToSet)
     {
         Money = moneyToSet;
+    }
+
+    public static void StartGame()
+    {
+        GameStarted = true;
+    }
+
+    public static bool IsGameStarted()
+    {
+        return GameStarted;
     }
 }
 

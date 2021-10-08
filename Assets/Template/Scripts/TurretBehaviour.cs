@@ -14,6 +14,7 @@ public class TurretBehaviour : MonoBehaviour
     private int damageValue = 2; // of the bullets fired
     private float bulletSpeed; // speed of the bullet
     private float range = 20; // of detection of enemies
+    private int price = 10;
     private GameObject target; // target to fire on
     private NavMeshAgent targetNavMeshAgent;
 
@@ -91,5 +92,10 @@ public class TurretBehaviour : MonoBehaviour
                 
             }
         }
+    }
+
+    public int GetPrice()
+    {
+        return price;
     }
 }

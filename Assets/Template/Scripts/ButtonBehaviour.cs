@@ -14,6 +14,6 @@ public class ButtonBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Selection.selectedTurret = turret;
+        Selection.SelectTurret(turret);
     }
 }

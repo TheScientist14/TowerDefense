@@ -22,12 +22,18 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (SelectionBehaviour.selectedTurret != null)
+        GameObject selectedTurret = Selection.GetSelectedTurret();
+        int price = Selection.GetSelectedTurretPrice();
+        if (selectedTurret != null)
         {
-            if (currentTurret == null || currentTurret.GetType() != SelectionBehaviour.selectedTurret.GetType())
+            if (currentTurret == null || currentTurret.GetType() != selectedTurret.GetType())
             {
-                currentTurret = Instantiate(SelectionBehaviour.selectedTurret, transform.position, Quaternion.identity);
-                // lose money
+                if(GameManagement.GetMoney() >= price)
+                {
+                    currentTurret = Instantiate(selectedTurret, transform.position, Quaternion.identity);
+                    GameManagement.RemoveMoney(price);
+                    TextManagement.instance.UpdateMoneyText();
+                }
             }
         }
     }

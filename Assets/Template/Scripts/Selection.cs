@@ -4,5 +4,22 @@ using UnityEngine;
 
 public class Selection : MonoBehaviour
 {
-    public static GameObject selectedTurret;
+    private static GameObject selectedTurret;
+    private static int selectedTurretPrice;
+
+    public static void SelectTurret(GameObject turret)
+    {
+        selectedTurret = turret;
+        selectedTurretPrice = selectedTurret.GetComponent<TurretBehaviour>().GetPrice();
+    }
+
+    public static GameObject GetSelectedTurret()
+    {
+        return selectedTurret;
+    }
+
+    public static int GetSelectedTurretPrice()
+    {
+        return selectedTurretPrice;
+    }
 }
