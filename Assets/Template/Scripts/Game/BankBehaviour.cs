@@ -9,6 +9,8 @@ public class BankBehaviour : MonoBehaviour
     private float spawnRate; // thief per second
 
     //testing
+    private int EnemyMax = 20;
+    private int NbEnemy = 0;
     private float time = 0;
 
     private float timer;
@@ -26,7 +28,7 @@ public class BankBehaviour : MonoBehaviour
         if (GameManagement.IsGameStarted())
         {
             time += Time.deltaTime;
-            if (timer <= 0)
+            if (timer <= 0 && NbEnemy < EnemyMax)
             {
                 spawn();
                 timer = 1 / spawnRate;
@@ -36,11 +38,12 @@ public class BankBehaviour : MonoBehaviour
                 timer -= Time.deltaTime;
             }
         }
+        Debug.Log("Nb Enemy spawn : " + NbEnemy);
     }
-
 
     private void spawn()
     {
         Instantiate(thief, transform.position + new Vector3(0, 0, 6), Quaternion.identity);
+        NbEnemy++;
     }
 }

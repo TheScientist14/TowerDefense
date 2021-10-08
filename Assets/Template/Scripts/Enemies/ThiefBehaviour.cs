@@ -37,8 +37,8 @@ public class ThiefBehaviour : MonoBehaviour
         Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * 50).eulerAngles;
         transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);*/
         //Quaternion rotation = Quaternion.LookRotation(camera.transform.position);
-        //healthBar.transform.rotation = Quaternion.Euler(camera.transform.rotation.x, camera.transform.rotation.y, camera.transform.rotation.z);
-        canva.transform.LookAt(cam.transform);
+        canva.transform.rotation = cam.transform.rotation;
+
         if ( health <= 0)
         {
             GameManagement.AddMoney(5);
