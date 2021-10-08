@@ -16,10 +16,9 @@ public class HelicopterBehaviour : MonoBehaviour
         GameObject Enemy = other.gameObject;
         if (Enemy.CompareTag("Enemy"))
         {
-            GameManagement.GetDamage(
-                Enemy.GetComponent<ThiefBehaviour>().PointLose()
-            );
+            GameManagement.GetDamage(Enemy.GetComponent<ThiefBehaviour>().PointLose());
+            GetComponent<TextManagement>().UpdateLifeText();
+            Destroy(Enemy);
         }
-        Destroy(Enemy);
     }
 }
