@@ -3,7 +3,11 @@ guid: 915971fb7dc7e69499a555e7a241689a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemyScript: {fileID: 11400000, guid: dab6204717fce3543b283273f186f407, type: 2}
+  - helicopter: {instanceID: 0}
+  - healthBar: {instanceID: 0}
+  - canva: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

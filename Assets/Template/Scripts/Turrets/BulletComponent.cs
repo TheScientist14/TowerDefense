@@ -47,7 +47,7 @@ public class BulletComponent : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.GetComponent<ThiefBehaviour>().GetDamage(damageValue);
+            other.GetComponent<EnemyBehaviour>().GetDamage(damageValue);
             Destroy(gameObject);
         }
     }
