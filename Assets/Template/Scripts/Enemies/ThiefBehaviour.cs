@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ using UnityEngine.UI;
 public class ThiefBehaviour : MonoBehaviour
 
 {
+
+    public EnemyScriptableObject enemyScript;
     public GameObject helicopter;
     private NavMeshAgent agent;
     private int health;
@@ -15,14 +18,18 @@ public class ThiefBehaviour : MonoBehaviour
     public Slider healthBar;
     public Canvas canva;
     private Camera cam;
+    private int price;
+    
     // Start is called before the first frame update
     void Start()
     {
-        damage = 1;
-        health = 5;
+        damage = enemyScript.damage;
+        health = enemyScript.health;
+        price = enemyScript.price;
         healthMax = health;
         helicopter = GameObject.Find("Helicopter");
         agent = GetComponent<NavMeshAgent>();
+        //agent.speed = enemyScript.speed;
         agent.destination = helicopter.transform.position;
         healthBar.maxValue = health;
         cam = Camera.main;
@@ -41,7 +48,7 @@ public class ThiefBehaviour : MonoBehaviour
 
         if ( health <= 0)
         {
-            GameManagement.AddMoney(5);
+            GameManagement.AddMoney(price);
             TextManagement.instance.UpdateMoneyText();
             Destroy(gameObject);
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BankBehaviour : MonoBehaviour
 {
     public GameObject thief;
+    public GameObject capo;
 
     private float spawnRate; // thief per second
 
@@ -30,7 +31,8 @@ public class BankBehaviour : MonoBehaviour
             time += Time.deltaTime;
             if (timer <= 0 && NbEnemy < EnemyMax)
             {
-                spawn();
+                //spawn(thief);
+                spawn(capo);
                 timer = 1 / spawnRate;
             }
             else
@@ -41,9 +43,9 @@ public class BankBehaviour : MonoBehaviour
         Debug.Log("Nb Enemy spawn : " + NbEnemy);
     }
 
-    private void spawn()
+    private void spawn(GameObject typeEnemy)
     {
-        Instantiate(thief, transform.position + new Vector3(0, 0, 6), Quaternion.identity);
+        Instantiate(typeEnemy, transform.position + new Vector3(0, 0, 6), Quaternion.identity);
         NbEnemy++;
     }
 }
