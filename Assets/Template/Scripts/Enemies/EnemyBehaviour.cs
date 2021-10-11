@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class ThiefBehaviour : MonoBehaviour
+public class EnemyBehaviour : MonoBehaviour
 
 {
 
@@ -29,7 +29,7 @@ public class ThiefBehaviour : MonoBehaviour
         healthMax = health;
         helicopter = GameObject.Find("Helicopter");
         agent = GetComponent<NavMeshAgent>();
-        //agent.speed = enemyScript.speed;
+        agent.speed = enemyScript.speed;
         agent.destination = helicopter.transform.position;
         healthBar.maxValue = health;
         cam = Camera.main;
