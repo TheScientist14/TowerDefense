@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,45 +8,71 @@ public class BankBehaviour : MonoBehaviour
     public GameObject thief;
     public GameObject capo;
 
-    private float spawnRate; // thief per second
+    private float spawnRateThief; // thief per second
+    private float spawnRateCapo; // Capo per second
+    public WaveScriptableObject wave;
 
     //testing
-    private int EnemyMax = 20;
-    private int NbEnemy = 0;
-    private float time = 0;
+    private int EnemyMax;
+    private int NbEnemy;
+    private int NbEnemyAll;
+    private int NbEnemyThief;
+    private int NbEnemyCapo;
+    private float time;
+    private bool isWaveReady;
 
     private float timer;
+    private object[] parametersCoroutine;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnRate = 1;
+        time = 0;
         timer = 0;
+        
+        NbEnemy = 0;
+        parametersCoroutine = new object[3];
+        isWaveReady = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameManagement.IsGameStarted())
+        if (GameManagement.IsGameStarted() && isWaveReady)
         {
-            time += Time.deltaTime;
-            if (timer <= 0 && NbEnemy < EnemyMax)
+            if (wave.nbEmenyTief > 0) // if to check if in the wave we have this type of enemy
             {
-                //spawn(thief);
-                spawn(capo);
-                timer = 1 / spawnRate;
+                spawnEnemy(thief, wave.spawnRateThief, wave.nbEmenyTief);
             }
-            else
+            if (wave.nbEmenyCapo > 0)
             {
-                timer -= Time.deltaTime;
+                spawnEnemy(capo, wave.spawnRateCapo, wave.nbEmenyCapo);
             }
+
+            isWaveReady = false;
         }
-        Debug.Log("Nb Enemy spawn : " + NbEnemy);
     }
 
-    private void spawn(GameObject typeEnemy)
+    private void spawnEnemy(GameObject typeEnemy, float spawnRate, int max)
     {
-        Instantiate(typeEnemy, transform.position + new Vector3(0, 0, 6), Quaternion.identity);
-        NbEnemy++;
+        if (NbEnemyAll < (wave.nbEmenyTief + wave.nbEmenyCapo))
+        {
+            parametersCoroutine[0] = typeEnemy;
+            parametersCoroutine[1] = spawnRate;
+            parametersCoroutine[2] = max;
+            
+            StartCoroutine("spawn", parametersCoroutine);
+        }
+
+    }
+
+    IEnumerator spawn(object[] parameters)
+    {
+        for (int i = 0; i < (int)parameters[2]; i++)
+        {
+            Instantiate((GameObject)parameters[0], transform.position + new Vector3(0, 0, 6), Quaternion.identity);
+            Debug.Log("Spawn : " + (GameObject)parameters[0]);            
+            yield return new WaitForSeconds(1f/(float)parameters[1]);
+        }
     }
 }

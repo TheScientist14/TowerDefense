@@ -37,10 +37,7 @@ public class GameManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( PlayerHealth <= 0)
-        {
-            Debug.Log("Game Over !!");
-        }
+        IsWin();
     }
 
     public static void GetDamage(int damage)
@@ -81,6 +78,16 @@ public class GameManagement : MonoBehaviour
     public static bool IsGameStarted()
     {
         return GameStarted;
+    }
+
+    public static bool IsWin()
+    {
+        if (PlayerHealth <= 0)
+        {
+            Debug.Log("Game Over !!");
+            return false;
+        }
+        return true;
     }
 }
 

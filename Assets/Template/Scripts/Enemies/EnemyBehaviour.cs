@@ -44,6 +44,8 @@ public class EnemyBehaviour : MonoBehaviour
         Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * 50).eulerAngles;
         transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);*/
         //Quaternion rotation = Quaternion.LookRotation(camera.transform.position);
+        //Vector3 screenPoint = cam.WorldToScreenPoint(gameObject.transform.position);
+        //healthBar.transform.position = new Vector2(screenPoint.x, screenPoint.y);
         canva.transform.rotation = cam.transform.rotation;
 
         if ( health <= 0)

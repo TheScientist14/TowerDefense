@@ -2498,6 +2498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 576e26c715b651f4782a06799637c37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletsContainer: {fileID: 1227484849}
+  turretsContainer: {fileID: 532186653}
 --- !u!4 &1873840359
 Transform:
   m_ObjectHideFlags: 0
@@ -2546,6 +2548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thief: {fileID: 7101354149481232762, guid: 86a6b9ab5da004d41a8bf3de07194c22, type: 3}
   capo: {fileID: 4510417012687410736, guid: 7b3b1ce63082f3e42858d0dd07e176ce, type: 3}
+  wave: {fileID: 11400000, guid: 02cc498418833824aa7046ecf9c2c57b, type: 2}
 --- !u!65 &1874594372
 BoxCollider:
   m_ObjectHideFlags: 0
