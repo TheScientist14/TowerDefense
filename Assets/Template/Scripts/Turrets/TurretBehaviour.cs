@@ -8,31 +8,21 @@ public class TurretBehaviour : MonoBehaviour
     public GameObject canon;
     public GameObject bullet;
     private BulletComponent bulletBehaviour;
+    private float timer;
 
-    private float fireRate; // bullet per second
-    private int damageValue = 2; // of the bullets fired
-    private float bulletSpeed; // speed of the bullet
-    private float range = 20; // of detection of enemies
-    private int price = 10;
+    public TurretScriptableObject turretStat;
+
     private GameObject target; // target to fire on
     private NavMeshAgent targetNavMeshAgent;
-
     private CapsuleCollider trigger;
-
-    //testing
-    private GameObject bulletFired;
-
-    private float timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = 2f;
         timer = 0f;
         trigger = GetComponent<CapsuleCollider>();
-        trigger.radius = range;
+        trigger.radius = turretStat.range;
         bulletBehaviour = bullet.GetComponent<BulletComponent>();
-        //bulletBehaviour.
     }
 
     // Update is called once per frame
@@ -47,10 +37,8 @@ public class TurretBehaviour : MonoBehaviour
         }
         if(timer <= 0f && target != null)
         {
-            bulletFired = Instantiate(bullet, canon.transform.position, transform.rotation, GameManagement.instance.bulletsContainer.transform) as GameObject;
-            bulletFired.GetComponent<BulletComponent>().SetDamageValue(damageValue);
-            Destroy(bulletFired, 5f);
-            timer = 1f / fireRate;
+            Instantiate(bullet, canon.transform.position, transform.rotation, GameManagement.instance.bulletsContainer.transform);
+            timer = 1f / turretStat.fireRate;
         }
         else
         {
@@ -95,6 +83,6 @@ public class TurretBehaviour : MonoBehaviour
 
     public int GetPrice()
     {
-        return price;
+        return turretStat.price;
     }
 }
