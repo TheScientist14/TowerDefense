@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EmptyCaseBehaviour : MonoBehaviour
 {
-    //public GameObject turretsParent;
-
     private GameObject currentTurret;
 
     // Start is called before the first frame update
@@ -22,17 +20,20 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GameObject selectedTurret = Selection.GetSelectedTurret();
-        int price = Selection.GetSelectedTurretPrice();
-        if (selectedTurret != null)
+        if(Input.GetMouseButtonDown(0))
         {
-            if (currentTurret == null || currentTurret.GetType() != selectedTurret.GetType())
+            GameObject selectedTurret = Selection.GetSelectedTurret();
+            int price = Selection.GetSelectedTurretPrice();
+            if (selectedTurret != null)
             {
-                if(GameManagement.GetMoney() >= price)
+                if (currentTurret == null || currentTurret.GetType() != selectedTurret.GetType())
                 {
-                    currentTurret = Instantiate(selectedTurret, transform.position, Quaternion.identity);
-                    GameManagement.RemoveMoney(price);
-                    TextManagement.instance.UpdateMoneyText();
+                    if(GameManagement.GetMoney() >= price)
+                    {
+                        currentTurret = Instantiate(selectedTurret, transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
+                        GameManagement.RemoveMoney(price);
+                        TextManagement.instance.UpdateMoneyText();
+                    }
                 }
             }
         }

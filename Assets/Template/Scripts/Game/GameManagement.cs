@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GameManagement : MonoBehaviour
 {
+    public GameObject bulletsContainer;
+    public GameObject turretsContainer;
+
+    public static GameManagement instance;
+
     private static int PlayerHealth = 100;
     private static int Money = 50;
     private static bool GameStarted = false;
@@ -11,6 +16,19 @@ public class GameManagement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Singleton
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            instance.bulletsContainer = bulletsContainer;
+            instance.turretsContainer = turretsContainer;
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+
         PlayerHealth = 100;
         Money = 50;
         GameStarted = false;
