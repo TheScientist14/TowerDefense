@@ -13,7 +13,7 @@ public class AgentButtonBehaviour : MonoBehaviour
         gameObject.GetComponent<Button>().onClick.AddListener(SelectTurret);
     }
 
-    void SelectTurret()
+    public void SelectTurret()
     {
         Selection.SelectTurret(agent);
     }

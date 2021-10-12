@@ -8,61 +8,74 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private GameObject currentTurret;
     private int currentTurretPrice;
-    private bool overing = false;
-
-    private static Vector2 uiShift = new Vector2(10, 10);
 
     // Start is called before the first frame update
     void Start()
     {
-        //uiStats.SetActive(false);
-        Camera cam = Camera.main;
-        Vector3 screenPoint = cam.WorldToScreenPoint(gameObject.transform.position);
-        uiStats.transform.position = new Vector2(screenPoint.x, screenPoint.y) + uiShift;
+        uiStats.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (overing)
-        {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                GameObject selectedTurret = Selection.GetSelectedTurret();
-                int price = Selection.GetSelectedTurretPrice();
-                if (selectedTurret != null)
-                {
-                    // TODO : give back money if turret is replacing the previous one
-                    if (currentTurret == null || currentTurret.GetType() != selectedTurret.GetType())
-                    {
-                        if (GameManagement.GetMoney() >= price)
-                        {
-                            currentTurret = Instantiate(selectedTurret, transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
-                            currentTurretPrice = price;
-                            GameManagement.RemoveMoney(price);
-                            TextManagement.instance.UpdateMoneyText();
-                        }
-                    }
-                }
-            }
-            else if (Input.GetButtonDown("Fire2"))
-            {
+        
+    }
 
-            }
-            else if (Input.GetButtonDown("Fire3"))
+
+
+    private void OnMouseDown()
+    {
+        GameObject selectedTurret = Selection.GetSelectedTurret();
+        int price = Selection.GetSelectedTurretPrice();
+        if (selectedTurret != null)
+        {
+            if (currentTurret == null)
             {
-                if (currentTurret != null)
+                if (GameManagement.GetMoney() >= price)
                 {
-                    GameManagement.AddMoney(currentTurretPrice);
-                    Destroy(currentTurret);
+                    currentTurret = Instantiate(selectedTurret, transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
+                    currentTurretPrice = price;
+                    GameManagement.RemoveMoney(price);
                     TextManagement.instance.UpdateMoneyText();
-                    currentTurretPrice = 0;
                 }
             }
+            else
+            {
+                uiStats.SetActive(true);
+            }
+        }
+        else
+        {
+            uiStats.SetActive(true);
         }
     }
 
-    private void OnMouseOver()
+    public void SellTurret()
+    {
+        if (currentTurret != null)
+        {
+            GameManagement.AddMoney(currentTurretPrice);
+            Destroy(currentTurret);
+            TextManagement.instance.UpdateMoneyText();
+            currentTurretPrice = 0;
+        }
+    }
+
+    public GameObject GetCurrentTurret()
+    {
+        return currentTurret;
+    }
+
+/*    public void ShowGUI(bool show)
+    {
+        if (show)
+        {
+            uiStats.SetActive(true);
+        }
+    }*/
+
+/*    private void OnMouseOver()
     {
         overing = true;
     }
@@ -70,5 +83,5 @@ public class EmptyCaseBehaviour : MonoBehaviour
     private void OnMouseExit()
     {
         overing = false;
-    }
+    }*/
 }
