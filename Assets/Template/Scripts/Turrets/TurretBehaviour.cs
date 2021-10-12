@@ -81,6 +81,26 @@ public class TurretBehaviour : MonoBehaviour
         }
     }
 
+    public int GetDamage()
+    {
+        return turretStat.damageValue;
+    }
+
+    public float GetRange()
+    {
+        return turretStat.range;
+    }
+
+    public float GetFireRate()
+    {
+        return turretStat.fireRate;
+    }
+
+    public float GetBulletSpeed()
+    {
+        return turretStat.bulletSpeed;
+    }
+
     public int GetPrice()
     {
         return turretStat.price;
