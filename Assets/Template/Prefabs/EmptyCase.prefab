@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.474441, g: 0.9528302, b: 0.46293166, a: 1}
+  m_Color: {r: 0.24414375, g: 0.9433962, b: 0.22694907, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8002555206037515612}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169686916403472190}
+        m_TargetAssemblyTypeName: EmptyCaseBehaviour, Assembly-CSharp
+        m_MethodName: UpgradeCurrentTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &824276165417266727
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,7 +771,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 242759903369008394}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169686916403472190}
+        m_TargetAssemblyTypeName: EmptyCaseBehaviour, Assembly-CSharp
+        m_MethodName: SellCurrentTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4083820182908815609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,6 +1916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentCase: {fileID: 824276165417266727}
+  turretName: {fileID: 5091131270765443122}
   damageStat: {fileID: 1963347390186538263}
   rangeStat: {fileID: 8269935603997934184}
   bullSpeedStat: {fileID: 4809409511590780630}

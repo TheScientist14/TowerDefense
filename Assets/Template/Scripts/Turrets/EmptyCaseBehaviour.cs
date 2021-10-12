@@ -5,15 +5,16 @@ using UnityEngine;
 public class EmptyCaseBehaviour : MonoBehaviour
 {
     public GameObject uiStats;
+    private GUI_StatsBehaviour uiStatsBehaviour;
 
     private GameObject currentTurret;
-    private int currentTurretPrice;
+    private TurretBehaviour currentTurretBehaviour;
 
     // Start is called before the first frame update
     void Start()
     {
         uiStats.SetActive(false);
-        
+        uiStatsBehaviour = uiStats.GetComponent<GUI_StatsBehaviour>();
     }
 
     // Update is called once per frame
@@ -26,45 +27,61 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        GameObject selectedTurret = Selection.GetSelectedTurret();
-        int price = Selection.GetSelectedTurretPrice();
-        if (selectedTurret != null)
+        if (Selection.GetSelectedTurret() != null)
         {
             if (currentTurret == null)
             {
-                if (GameManagement.GetMoney() >= price)
-                {
-                    currentTurret = Instantiate(selectedTurret, transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
-                    currentTurretPrice = price;
-                    GameManagement.RemoveMoney(price);
-                    TextManagement.instance.UpdateMoneyText();
-                }
+                BuySelectedTurret();
             }
             else
             {
                 uiStats.SetActive(true);
             }
         }
-        else
+        else if(currentTurret != null)
         {
             uiStats.SetActive(true);
         }
     }
 
-    public void SellTurret()
+    public void SellCurrentTurret()
     {
         if (currentTurret != null)
         {
-            GameManagement.AddMoney(currentTurretPrice);
+            GameManagement.AddMoney(currentTurretBehaviour.GetPrice());
             Destroy(currentTurret);
             TextManagement.instance.UpdateMoneyText();
-            currentTurretPrice = 0;
+            uiStatsBehaviour.Hide();
         }
+    }
+
+    private void BuySelectedTurret()
+    {
+        TurretBehaviour selectedTurretBehaviour = Selection.GetSelectedTurretBehaviour();
+        if (GameManagement.GetMoney() >= selectedTurretBehaviour.GetPrice())
+        {
+            currentTurret = Instantiate(Selection.GetSelectedTurret(), transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
+            currentTurretBehaviour = selectedTurretBehaviour;
+            GameManagement.RemoveMoney(selectedTurretBehaviour.GetPrice());
+            TextManagement.instance.UpdateMoneyText();
+            uiStatsBehaviour.UpdateData();
+        }
+    }
+
+    public void UpgradeCurrentTurret()
+    {
+        currentTurretBehaviour.UpgradeTurret();
+        uiStatsBehaviour.UpdateData();
     }
 
     public GameObject GetCurrentTurret()
     {
         return currentTurret;
+    }
+
+    public TurretBehaviour GetCurrentTurretBehaviour()
+    {
+        return currentTurretBehaviour;
     }
 
 /*    public void ShowGUI(bool show)

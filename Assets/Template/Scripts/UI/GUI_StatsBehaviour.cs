@@ -7,6 +7,7 @@ using TMPro;
 public class GUI_StatsBehaviour : MonoBehaviour
 {
     public GameObject parentCase;
+    public TextMeshProUGUI turretName;
     public TextMeshProUGUI damageStat;
     public TextMeshProUGUI rangeStat;
     public TextMeshProUGUI bullSpeedStat;
@@ -14,7 +15,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
 
     private EmptyCaseBehaviour parentCaseBehaviour;
 
-    private static Vector2 shift = new Vector2(50, 0);
+    private static Vector2 shift = new Vector2(200, 0);
     private Vector3 screenPoint;
     private Camera cam;
 
@@ -22,10 +23,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     void Start()
     {
         parentCaseBehaviour = parentCase.GetComponent<EmptyCaseBehaviour>();
-        UpdateData();
         cam = Camera.main;
-        screenPoint = cam.WorldToScreenPoint(parentCase.transform.position);
-        transform.position = new Vector2(screenPoint.x, screenPoint.y) + shift;
         Hide();
     }
 
@@ -39,6 +37,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     public void UpdateData()
     {
         TurretBehaviour turret = parentCaseBehaviour.GetCurrentTurret().GetComponent<TurretBehaviour>();
+        turretName.text = turret.GetName() + " (" + turret.level.ToString() + ")";
         damageStat.text = turret.GetDamage().ToString();
         rangeStat.text = turret.GetRange().ToString();
         bullSpeedStat.text = turret.GetBulletSpeed().ToString();

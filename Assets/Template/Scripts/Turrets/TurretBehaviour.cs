@@ -10,7 +10,8 @@ public class TurretBehaviour : MonoBehaviour
     private BulletComponent bulletBehaviour;
     private float timer;
 
-    public TurretScriptableObject turretStat;
+    public TurretScriptableObject[] turretStat;
+    public int level = 0;
 
     private GameObject target; // target to fire on
     private NavMeshAgent targetNavMeshAgent;
@@ -21,9 +22,11 @@ public class TurretBehaviour : MonoBehaviour
     {
         timer = 0f;
         trigger = GetComponent<CapsuleCollider>();
-        trigger.radius = turretStat.range;
+        trigger.radius = turretStat[level].range;
         bulletBehaviour = bullet.GetComponent<BulletComponent>();
     }
+
+    // TODO improve bullet spawn
 
     // Update is called once per frame
     void Update()
@@ -35,15 +38,38 @@ public class TurretBehaviour : MonoBehaviour
             double timeBullet = dist / bulletSpeed;
             transform.LookAt(target.transform.position + ((float)timeBullet*targetNavMeshAgent.speed)*target.transform.forward);
         }
+        else
+        {
+            //GetComponent<Animator>().SetBool("Firing", false);
+        }
         if(timer <= 0f && target != null)
         {
             Instantiate(bullet, canon.transform.position, transform.rotation, GameManagement.instance.bulletsContainer.transform);
-            timer = 1f / turretStat.fireRate;
+            //GetComponent<Animator>().SetBool("Firing", true);
+            timer = 1f / turretStat[level].fireRate;
         }
         else
         {
             timer -= Time.deltaTime;
         }
+    }
+
+    public void UpgradeTurret()
+    {
+        level++;
+        if(level >= turretStat.Length)
+        {
+            level = turretStat.Length-1;
+        }
+        else
+        {
+            trigger.radius = turretStat[level].range;
+        }
+    }
+
+    public bool IsFullyUpgraded()
+    {
+        return (level >= turretStat.Length - 1);
     }
 
     /*
@@ -81,28 +107,39 @@ public class TurretBehaviour : MonoBehaviour
         }
     }
 
+    // Trivial getters
     public int GetDamage()
     {
-        return turretStat.damageValue;
+        return turretStat[level].damageValue;
     }
 
     public float GetRange()
     {
-        return turretStat.range;
+        return turretStat[level].range;
     }
 
     public float GetFireRate()
     {
-        return turretStat.fireRate;
+        return turretStat[level].fireRate;
     }
 
     public float GetBulletSpeed()
     {
-        return turretStat.bulletSpeed;
+        return turretStat[level].bulletSpeed;
     }
 
     public int GetPrice()
     {
-        return turretStat.price;
+        return turretStat[level].price;
+    }
+
+    public int GetLevel()
+    {
+        return level+1;
+    }
+
+    public string GetName()
+    {
+        return turretStat[level].name;
     }
 }

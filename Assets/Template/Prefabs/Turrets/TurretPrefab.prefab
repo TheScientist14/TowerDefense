@@ -143,7 +143,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canon: {fileID: 2321952499823152006}
   bullet: {fileID: 1751585689019768501, guid: e60fe9fc28729644fbb2f1fa9f46377a, type: 3}
-  turretStat: {fileID: 11400000, guid: 04dafce5a18112445865585da22651d5, type: 2}
+  turretStat:
+  - {fileID: 11400000, guid: 04dafce5a18112445865585da22651d5, type: 2}
+  - {fileID: 11400000, guid: eb23f742cfa03e54ab17f931782e8bbc, type: 2}
+  - {fileID: 11400000, guid: f551074ef3eca78479f2d23f2447616f, type: 2}
+  level: 0
 --- !u!136 &4123447695447987162
 CapsuleCollider:
   m_ObjectHideFlags: 0
