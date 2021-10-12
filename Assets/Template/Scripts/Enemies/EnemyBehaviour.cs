@@ -10,7 +10,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
 
     public EnemyScriptableObject enemyScript;
-    public GameObject helicopter;
+    private GameObject helicopter;
     private NavMeshAgent agent;
     private int health;
     private int healthMax;
