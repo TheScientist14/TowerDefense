@@ -18,6 +18,7 @@ public class Selection : MonoBehaviour
         return selectedTurret;
     }
 
+    // this script is stored on the hard disk, it is not bound to an running instance
     public static TurretBehaviour GetSelectedTurretBehaviour()
     {
         return selectedTurretBehaviour;

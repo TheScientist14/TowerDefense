@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1735131119807805886, guid: 55a70f9c465a09c40bfed15caf01e653, type: 3}
+      propertyPath: turretName
+      value: Sniper
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735131119807805886, guid: 55a70f9c465a09c40bfed15caf01e653, type: 3}
+      propertyPath: turretStat.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b0a80b422539e249b63f114161f29bb, type: 2}
+    - target: {fileID: 1735131119807805886, guid: 55a70f9c465a09c40bfed15caf01e653, type: 3}
+      propertyPath: turretStat.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7055360171ee1c040b0b87e344aeee0a, type: 2}
+    - target: {fileID: 1735131119807805886, guid: 55a70f9c465a09c40bfed15caf01e653, type: 3}
+      propertyPath: turretStat.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f7774c00aaab504e835fcf1a259541c, type: 2}
     - target: {fileID: 6184563625263476915, guid: 55a70f9c465a09c40bfed15caf01e653, type: 3}
       propertyPath: m_Name
       value: SniperPrefab
