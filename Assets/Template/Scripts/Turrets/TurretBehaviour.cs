@@ -63,13 +63,8 @@ public class TurretBehaviour : MonoBehaviour
         }
         else
         {
-            trigger.radius = turretStat[level].range;
+            this.trigger.radius = turretStat[level].range;
         }
-    }
-
-    public bool IsFullyUpgraded()
-    {
-        return (level >= turretStat.Length - 1);
     }
 
     /*
@@ -140,6 +135,33 @@ public class TurretBehaviour : MonoBehaviour
 
     public string GetName()
     {
-        return turretStat[level].name;
+        return turretStat[level].turretName;
+    }
+
+    public bool IsFullyUpgraded()
+    {
+        return (level >= turretStat.Length - 1);
+    }
+
+    public int GetUpgradePrice()
+    {
+        if(level < turretStat.Length - 1)
+        {
+            return turretStat[level + 1].price;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    public int GetSellPrice()
+    {
+        int price = 0;
+        for(int i = 0; i <= level; i++)
+        {
+            price += turretStat[i].price;
+        }
+        return price;
     }
 }

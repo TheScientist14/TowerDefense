@@ -13,8 +13,8 @@ public class EmptyCaseBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        uiStats.SetActive(false);
         uiStatsBehaviour = uiStats.GetComponent<GUI_StatsBehaviour>();
+        uiStatsBehaviour.Hide();
     }
 
     // Update is called once per frame
@@ -48,10 +48,10 @@ public class EmptyCaseBehaviour : MonoBehaviour
     {
         if (currentTurret != null)
         {
-            GameManagement.AddMoney(currentTurretBehaviour.GetPrice());
+            GameManagement.AddMoney(currentTurretBehaviour.GetSellPrice());
+            uiStatsBehaviour.Hide();
             Destroy(currentTurret);
             TextManagement.instance.UpdateMoneyText();
-            uiStatsBehaviour.Hide();
         }
     }
 
@@ -61,7 +61,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
         if (GameManagement.GetMoney() >= selectedTurretBehaviour.GetPrice())
         {
             currentTurret = Instantiate(Selection.GetSelectedTurret(), transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
-            currentTurretBehaviour = selectedTurretBehaviour;
+            currentTurretBehaviour = currentTurret.GetComponent<TurretBehaviour>();
             GameManagement.RemoveMoney(selectedTurretBehaviour.GetPrice());
             TextManagement.instance.UpdateMoneyText();
             uiStatsBehaviour.UpdateData();
@@ -70,8 +70,17 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     public void UpgradeCurrentTurret()
     {
-        currentTurretBehaviour.UpgradeTurret();
-        uiStatsBehaviour.UpdateData();
+        if (!currentTurretBehaviour.IsFullyUpgraded())
+        {
+            int price = currentTurretBehaviour.GetUpgradePrice();
+            if (GameManagement.GetMoney() >= price)
+            {
+                currentTurretBehaviour.UpgradeTurret();
+                GameManagement.RemoveMoney(price);
+                TextManagement.instance.UpdateMoneyText();
+                uiStatsBehaviour.UpdateData();
+            }
+        }
     }
 
     public GameObject GetCurrentTurret()

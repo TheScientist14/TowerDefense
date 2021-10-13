@@ -12,8 +12,11 @@ public class GUI_StatsBehaviour : MonoBehaviour
     public TextMeshProUGUI rangeStat;
     public TextMeshProUGUI bullSpeedStat;
     public TextMeshProUGUI fireRateStat;
+    public TextMeshProUGUI upgradePrice;
+    public GameObject upgradeButton;
 
     private EmptyCaseBehaviour parentCaseBehaviour;
+    private Image upgradeButtonImage;
 
     private static Vector2 shift = new Vector2(200, 0);
     private Vector3 screenPoint;
@@ -23,6 +26,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     void Start()
     {
         parentCaseBehaviour = parentCase.GetComponent<EmptyCaseBehaviour>();
+        upgradeButtonImage = upgradeButton.GetComponent<Image>();
         cam = Camera.main;
         Hide();
     }
@@ -37,11 +41,19 @@ public class GUI_StatsBehaviour : MonoBehaviour
     public void UpdateData()
     {
         TurretBehaviour turret = parentCaseBehaviour.GetCurrentTurret().GetComponent<TurretBehaviour>();
-        turretName.text = turret.GetName() + " (" + turret.level.ToString() + ")";
+        turretName.text = turret.GetName() + " (" + turret.GetLevel().ToString() + ")";
         damageStat.text = turret.GetDamage().ToString();
         rangeStat.text = turret.GetRange().ToString();
         bullSpeedStat.text = turret.GetBulletSpeed().ToString();
         fireRateStat.text = turret.GetFireRate().ToString();
+        if (!turret.IsFullyUpgraded())
+        {
+            upgradePrice.text = turret.GetUpgradePrice().ToString();
+        }
+        else
+        {
+            upgradeButtonImage.color = Color.grey;
+        }
     }
 
     public void Hide()

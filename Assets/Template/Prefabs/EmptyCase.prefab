@@ -1921,6 +1921,8 @@ MonoBehaviour:
   rangeStat: {fileID: 8269935603997934184}
   bullSpeedStat: {fileID: 4809409511590780630}
   fireRateStat: {fileID: 6375804428552238957}
+  upgradePrice: {fileID: 1658999013297779802}
+  upgradeButton: {fileID: 105335875850557415}
 --- !u!1 &7541067158387501079
 GameObject:
   m_ObjectHideFlags: 0

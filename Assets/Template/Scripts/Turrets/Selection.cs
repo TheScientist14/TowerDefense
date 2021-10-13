@@ -5,12 +5,12 @@ using UnityEngine;
 public class Selection : MonoBehaviour
 {
     private static GameObject selectedTurret;
-    private static TurretBehaviour selectedTurretPrice;
+    private static TurretBehaviour selectedTurretBehaviour;
 
     public static void SelectTurret(GameObject turret)
     {
         selectedTurret = turret;
-        selectedTurretPrice = selectedTurret.GetComponent<TurretBehaviour>();
+        selectedTurretBehaviour = selectedTurret.GetComponent<TurretBehaviour>();
     }
 
     public static GameObject GetSelectedTurret()
@@ -20,6 +20,6 @@ public class Selection : MonoBehaviour
 
     public static TurretBehaviour GetSelectedTurretBehaviour()
     {
-        return selectedTurretPrice;
+        return selectedTurretBehaviour;
     }
 }
