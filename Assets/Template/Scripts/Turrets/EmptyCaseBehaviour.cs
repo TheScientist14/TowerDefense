@@ -27,7 +27,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Selection.GetSelectedTurret() != null)
+        if (Selection.instance.GetSelectedTurret() != null)
         {
             if (currentTurret == null)
             {
@@ -57,10 +57,10 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void BuySelectedTurret()
     {
-        TurretBehaviour selectedTurretBehaviour = Selection.GetSelectedTurretBehaviour();
+        TurretBehaviour selectedTurretBehaviour = Selection.instance.GetSelectedTurretBehaviour();
         if (GameManagement.GetMoney() >= selectedTurretBehaviour.GetPrice())
         {
-            currentTurret = Instantiate(Selection.GetSelectedTurret(), transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
+            currentTurret = Instantiate(Selection.instance.GetSelectedTurret(), transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
             currentTurretBehaviour = currentTurret.GetComponent<TurretBehaviour>();
             GameManagement.RemoveMoney(selectedTurretBehaviour.GetPrice());
             TextManagement.instance.UpdateMoneyText();

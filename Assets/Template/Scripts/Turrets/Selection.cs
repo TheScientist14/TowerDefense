@@ -4,22 +4,45 @@ using UnityEngine;
 
 public class Selection : MonoBehaviour
 {
-    private static GameObject selectedTurret;
-    private static TurretBehaviour selectedTurretBehaviour;
+    private GameObject selectedTurret;
+    private TurretBehaviour selectedTurretBehaviour;
 
-    public static void SelectTurret(GameObject turret)
+    public static Selection instance;
+
+    void Start()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            selectedTurret = null;
+            selectedTurretBehaviour = null;
+        }
+    }
+
+    public void SelectTurret(GameObject turret)
     {
         selectedTurret = turret;
         selectedTurretBehaviour = selectedTurret.GetComponent<TurretBehaviour>();
     }
 
-    public static GameObject GetSelectedTurret()
+    public GameObject GetSelectedTurret()
     {
         return selectedTurret;
     }
 
     // this script is stored on the hard disk, it is not bound to an running instance
-    public static TurretBehaviour GetSelectedTurretBehaviour()
+    public TurretBehaviour GetSelectedTurretBehaviour()
     {
         return selectedTurretBehaviour;
     }

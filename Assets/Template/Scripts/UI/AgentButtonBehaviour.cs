@@ -15,6 +15,6 @@ public class AgentButtonBehaviour : MonoBehaviour
 
     public void SelectTurret()
     {
-        Selection.SelectTurret(agent);
+        Selection.instance.SelectTurret(agent);
     }
 }

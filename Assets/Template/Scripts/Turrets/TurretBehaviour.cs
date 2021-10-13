@@ -37,7 +37,11 @@ public class TurretBehaviour : MonoBehaviour
             double dist = (canon.transform.position - target.transform.position).magnitude;
             double bulletSpeed = bulletBehaviour.speed;
             double timeBullet = dist / bulletSpeed;
-            transform.LookAt(target.transform.position + ((float)timeBullet*targetNavMeshAgent.speed)*target.transform.forward);
+            Vector3 targetPos = target.transform.position + ((float)timeBullet * targetNavMeshAgent.speed) * target.transform.forward;
+            transform.LookAt(targetPos);
+            Vector3 rot = transform.rotation.eulerAngles;
+            transform.rotation = Quaternion.Euler(0, rot.y, 0);
+            canon.transform.rotation = Quaternion.Euler(rot.x, 0, rot.z);
         }
         else
         {
@@ -45,7 +49,7 @@ public class TurretBehaviour : MonoBehaviour
         }
         if(timer <= 0f && target != null)
         {
-            Instantiate(bullet, canon.transform.position, transform.rotation, GameManagement.instance.bulletsContainer.transform);
+            Instantiate(bullet, canon.transform.position, canon.transform.rotation, GameManagement.instance.bulletsContainer.transform);
             //GetComponent<Animator>().SetBool("Firing", true);
             timer = 1f / turretStat[level].fireRate;
         }
