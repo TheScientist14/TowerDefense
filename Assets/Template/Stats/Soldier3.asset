@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d07ee707ae7b447b33444dde782530, type: 3}
   m_Name: Soldier3
   m_EditorClassIdentifier: 
-  turretName: 
-  fireRate: 0
-  damageValue: 0
-  bulletSpeed: 0
-  range: 0
-  price: 0
+  turretName: Soldier
+  fireRate: 3
+  damageValue: 3
+  bulletSpeed: 75
+  range: 30
+  price: 50

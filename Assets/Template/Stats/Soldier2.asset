@@ -17,4 +17,4 @@ MonoBehaviour:
   damageValue: 2
   bulletSpeed: 50
   range: 25
-  price: 120
+  price: 25
