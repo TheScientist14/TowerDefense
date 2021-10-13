@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cf41b777bad4569a64a1a92f976deb4, type: 3}
   m_Name: lvl1wave1
   m_EditorClassIdentifier: 
-  nbEmenyAll: 7
   thief: {fileID: 7101354149481232762, guid: 86a6b9ab5da004d41a8bf3de07194c22, type: 3}
   capo: {fileID: 4510417012687410736, guid: 7b3b1ce63082f3e42858d0dd07e176ce, type: 3}
   nbEmenyTief: 5
   spawnRateThief: 2
   nbEmenyCapo: 2
-  spawnRateCapo: 0.2
+  spawnRateCapo: 1

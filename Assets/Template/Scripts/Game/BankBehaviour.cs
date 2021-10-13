@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class BankBehaviour : MonoBehaviour
@@ -22,7 +23,8 @@ public class BankBehaviour : MonoBehaviour
     private bool isWaveReady;
 
     private float timer;
-    private object[] parametersCoroutine;
+    private object[] parametersThief;
+    private object[] parametersCapo;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,8 @@ public class BankBehaviour : MonoBehaviour
         timer = 0;
         
         NbEnemy = 0;
-        parametersCoroutine = new object[3];
+        parametersThief = new object[3];
+        parametersCapo = new object[3];
         isWaveReady = true;
     }
 
@@ -40,30 +43,26 @@ public class BankBehaviour : MonoBehaviour
     {
         if (GameManagement.IsGameStarted() && isWaveReady)
         {
+            GameManagement.setEnemyLeft(wave.nbEmenyTief + wave.nbEmenyCapo);
             if (wave.nbEmenyTief > 0) // if to check if in the wave we have this type of enemy
             {
-                spawnEnemy(thief, wave.spawnRateThief, wave.nbEmenyTief);
+                Debug.Log("SpawnEnemy Thief");
+                parametersThief[0] = thief;
+                parametersThief[1] = wave.spawnRateThief;
+                parametersThief[2] = wave.nbEmenyTief;
+                StartCoroutine("spawn", parametersThief);
             }
             if (wave.nbEmenyCapo > 0)
             {
-                spawnEnemy(capo, wave.spawnRateCapo, wave.nbEmenyCapo);
+                Debug.Log("SpawnEnemy Capo");
+                parametersCapo[0] = capo;
+                parametersCapo[1] = wave.spawnRateCapo;
+                parametersCapo[2] = wave.nbEmenyCapo;
+                StartCoroutine("spawn", parametersCapo);
             }
 
             isWaveReady = false;
         }
-    }
-
-    private void spawnEnemy(GameObject typeEnemy, float spawnRate, int max)
-    {
-        if (NbEnemyAll < (wave.nbEmenyTief + wave.nbEmenyCapo))
-        {
-            parametersCoroutine[0] = typeEnemy;
-            parametersCoroutine[1] = spawnRate;
-            parametersCoroutine[2] = max;
-            
-            StartCoroutine("spawn", parametersCoroutine);
-        }
-
     }
 
     IEnumerator spawn(object[] parameters)
@@ -72,7 +71,12 @@ public class BankBehaviour : MonoBehaviour
         {
             Instantiate((GameObject)parameters[0], transform.position + new Vector3(0, 0, 6), Quaternion.identity);
             Debug.Log("Spawn : " + (GameObject)parameters[0]);            
-            yield return new WaitForSeconds(1f/(float)parameters[1]);
+            yield return new WaitForSeconds(1/(float)parameters[1]);
         }
+    }
+
+    public void NextWave()
+    {
+        //wave = (WaveScriptableObject) File.Open("lvl1wave" + GameManagement.GetCurrentLvl() + "", FileMode.Open);
     }
 }

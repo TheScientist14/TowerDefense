@@ -52,6 +52,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             GameManagement.AddMoney(price);
             TextManagement.instance.UpdateMoneyText();
+            GameManagement.EnemyDie();
             Destroy(gameObject);
         }
     }
