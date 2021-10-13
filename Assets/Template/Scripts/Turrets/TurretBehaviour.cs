@@ -40,12 +40,12 @@ public class TurretBehaviour : MonoBehaviour
         }
         else
         {
-            //GetComponent<Animator>().SetBool("Firing", false);
+            gameObject.GetComponent<Animator>().SetBool("Firing", false);
         }
         if(timer <= 0f && target != null)
         {
             Instantiate(bullet, canon.transform.position, transform.rotation, GameManagement.instance.bulletsContainer.transform);
-            //GetComponent<Animator>().SetBool("Firing", true);
+            gameObject.GetComponent<Animator>().SetBool("Firing", true);
             timer = 1f / turretStat[level].fireRate;
         }
         else
