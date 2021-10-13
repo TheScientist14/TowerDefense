@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635ee3f9e93cdab498df4ac651f961ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thief: {fileID: 8251554232128289851, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
+  thief: {fileID: 7101354149481232762, guid: 86a6b9ab5da004d41a8bf3de07194c22, type: 3}
   capo: {fileID: 4510417012687410736, guid: 7b3b1ce63082f3e42858d0dd07e176ce, type: 3}
   wave: {fileID: 11400000, guid: 02cc498418833824aa7046ecf9c2c57b, type: 2}
 --- !u!1 &216837517

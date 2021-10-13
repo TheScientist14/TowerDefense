@@ -5,13 +5,14 @@ using UnityEngine.AI;
 
 public class TurretBehaviour : MonoBehaviour
 {
+    public string turretName;
     public GameObject canon;
     public GameObject bullet;
-    private BulletComponent bulletBehaviour;
-    private float timer;
-
     public TurretScriptableObject[] turretStat;
     public int level = 0;
+
+    private BulletComponent bulletBehaviour;
+    private float timer;
 
     private GameObject target; // target to fire on
     private NavMeshAgent targetNavMeshAgent;
@@ -135,7 +136,7 @@ public class TurretBehaviour : MonoBehaviour
 
     public string GetName()
     {
-        return turretStat[level].turretName;
+        return turretName;
     }
 
     public bool IsFullyUpgraded()

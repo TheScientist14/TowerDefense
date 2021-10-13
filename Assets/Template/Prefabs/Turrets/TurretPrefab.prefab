@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec2956073e6ff8542ac85b7fb45bfcc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turretName: Soldier
   canon: {fileID: 2321952499823152006}
   bullet: {fileID: 1751585689019768501, guid: e60fe9fc28729644fbb2f1fa9f46377a, type: 3}
   turretStat:
