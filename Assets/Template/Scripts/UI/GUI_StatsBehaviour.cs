@@ -17,6 +17,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
 
     private EmptyCaseBehaviour parentCaseBehaviour;
     private Image upgradeButtonImage;
+    private Color upgradeButtonImageColor;
 
     private static Vector2 shift = new Vector2(200, 0);
     private Vector3 screenPoint;
@@ -27,6 +28,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     {
         parentCaseBehaviour = parentCase.GetComponent<EmptyCaseBehaviour>();
         upgradeButtonImage = upgradeButton.GetComponent<Image>();
+        upgradeButtonImageColor = upgradeButtonImage.color;
         cam = Camera.main;
         Hide();
     }
@@ -49,7 +51,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
         if (!turret.IsFullyUpgraded())
         {
             upgradePrice.text = turret.GetUpgradePrice().ToString();
-            upgradeButtonImage.color = new Color(0x3E, 0xF1, 0x3A);
+            upgradeButtonImage.color = upgradeButtonImageColor;
         }
         else
         {
