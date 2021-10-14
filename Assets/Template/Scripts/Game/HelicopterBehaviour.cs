@@ -18,6 +18,7 @@ public class HelicopterBehaviour : MonoBehaviour
         {
             GameManagement.GetDamage(Enemy.GetComponent<EnemyBehaviour>().PointLose());
             TextManagement.instance.UpdateLifeText();
+            GameManagement.EnemyDie();
             Destroy(Enemy);
         }
     }

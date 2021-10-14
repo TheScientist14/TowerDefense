@@ -16,5 +16,5 @@ MonoBehaviour:
   capo: {fileID: 4510417012687410736, guid: 7b3b1ce63082f3e42858d0dd07e176ce, type: 3}
   nbEmenyTief: 5
   spawnRateThief: 2
-  nbEmenyCapo: 2
-  spawnRateCapo: 1
+  nbEmenyCapo: 0
+  spawnRateCapo: 0
