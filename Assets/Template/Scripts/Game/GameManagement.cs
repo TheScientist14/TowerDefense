@@ -6,14 +6,13 @@ public class GameManagement : MonoBehaviour
 {
     public GameObject bulletsContainer;
     public GameObject turretsContainer;
-    public GameObject bank;
 
     public static GameManagement instance;
 
-    private static int PlayerHealth = 100;
-    private static int Money = 50;
-    private static bool GameStarted = false;
-    private static bool WaveReady = false;
+    private static int PlayerHealth;
+    private static int Money;
+    private static bool GameStarted;
+    private static bool WaveReady;
     private static int EnemyLeft;
     private static int lvl;
 

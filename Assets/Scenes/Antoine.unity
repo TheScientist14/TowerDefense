@@ -356,8 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 576e26c715b651f4782a06799637c37e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletsContainer: {fileID: 532186653}
-  turretsContainer: {fileID: 1227484849}
+  bulletsContainer: {fileID: 1227484849}
+  turretsContainer: {fileID: 532186653}
   bank: {fileID: 1874594370}
 --- !u!4 &374491363
 Transform:

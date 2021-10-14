@@ -10,7 +10,7 @@ public class TurretBehaviour : MonoBehaviour
     public GameObject canon;
     public GameObject bullet;
     public TurretScriptableObject[] turretStat;
-    public int level = 0;
+    public int level;
 
     private BulletComponent bulletBehaviour;
     private float timer;
@@ -26,6 +26,7 @@ public class TurretBehaviour : MonoBehaviour
         trigger = GetComponent<CapsuleCollider>();
         trigger.radius = turretStat[level].range;
         bulletBehaviour = bullet.GetComponent<BulletComponent>();
+        level = 0;
     }
 
     // TODO improve bullet spawn
