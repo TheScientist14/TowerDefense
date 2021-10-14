@@ -78,7 +78,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretName: Soldier
-  canon: {fileID: 4501820894383155915}
+  weapon: {fileID: 4501820894383155915}
+  canon: {fileID: 1869100267155353290}
   bullet: {fileID: 1751585689019768501, guid: e60fe9fc28729644fbb2f1fa9f46377a, type: 3}
   turretStat:
   - {fileID: 11400000, guid: 04dafce5a18112445865585da22651d5, type: 2}
