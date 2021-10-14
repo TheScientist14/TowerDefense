@@ -41,7 +41,7 @@ public class TurretBehaviour : MonoBehaviour
             transform.LookAt(targetPos);
             Vector3 rot = transform.rotation.eulerAngles;
             transform.rotation = Quaternion.Euler(0, rot.y, 0);
-            canon.transform.rotation = Quaternion.Euler(rot.x, 0, rot.z);
+            canon.transform.rotation = Quaternion.Euler(rot.x, rot.y, 0);
         }
         else
         {
