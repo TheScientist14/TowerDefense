@@ -8,6 +8,7 @@ public class TextManagement : MonoBehaviour
     public static TextManagement instance;
     public TextMeshProUGUI LifeText;
     public TextMeshProUGUI MoneyText;
+    public TextMeshProUGUI WaveText;
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class TextManagement : MonoBehaviour
     {
         UpdateLifeText();
         UpdateMoneyText();
+        UpdateWaveText();
     }
 
     // Update is called once per frame
@@ -35,5 +37,10 @@ public class TextManagement : MonoBehaviour
     public void UpdateMoneyText()
     {
         MoneyText.SetText("Money : " + GameManagement.GetMoney());
+    }
+
+    public void UpdateWaveText()
+    {
+        WaveText.SetText("Wave : " + (GameManagement.GetCurrentLvl() + 1));
     }
 }
