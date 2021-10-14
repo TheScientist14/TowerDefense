@@ -49,6 +49,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
         if (!turret.IsFullyUpgraded())
         {
             upgradePrice.text = turret.GetUpgradePrice().ToString();
+            upgradeButtonImage.color = new Color(0x3E, 0xF1, 0x3A);
         }
         else
         {
