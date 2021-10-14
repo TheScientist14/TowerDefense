@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class TurretBehaviour : MonoBehaviour
 {
     public string turretName;
+    public GameObject weapon;
     public GameObject canon;
     public GameObject bullet;
     public TurretScriptableObject[] turretStat;
@@ -41,7 +42,7 @@ public class TurretBehaviour : MonoBehaviour
             transform.LookAt(targetPos);
             Vector3 rot = transform.rotation.eulerAngles;
             transform.rotation = Quaternion.Euler(0, rot.y, 0);
-            canon.transform.rotation = Quaternion.Euler(rot.x, rot.y, 0);
+            weapon.transform.rotation = Quaternion.Euler(rot.x, rot.y, 0);
         }
         else
         {
