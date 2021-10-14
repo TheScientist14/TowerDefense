@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EmptyCaseBehaviour : MonoBehaviour
 {
@@ -27,20 +28,23 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Selection.instance.GetSelectedTurret() != null)
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            if (currentTurret == null)
+            if (Selection.instance.GetSelectedTurret() != null)
             {
-                BuySelectedTurret();
+                if (currentTurret == null)
+                {
+                    BuySelectedTurret();
+                }
+                else
+                {
+                    uiStats.SetActive(true);
+                }
             }
-            else
+            else if(currentTurret != null)
             {
                 uiStats.SetActive(true);
             }
-        }
-        else if(currentTurret != null)
-        {
-            uiStats.SetActive(true);
         }
     }
 
