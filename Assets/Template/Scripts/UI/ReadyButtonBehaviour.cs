@@ -9,5 +9,6 @@ public class ReadyButtonBehaviour : MonoBehaviour
     void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(GameManagement.StartGame);
+        gameObject.GetComponent<Button>().onClick.AddListener(GameManagement.StartWave);
     }
 }

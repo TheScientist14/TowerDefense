@@ -13,6 +13,7 @@ public class GameManagement : MonoBehaviour
     private static int PlayerHealth = 100;
     private static int Money = 50;
     private static bool GameStarted = false;
+    private static bool WaveReady = false;
     private static int EnemyLeft;
     private static int lvl;
 
@@ -35,18 +36,20 @@ public class GameManagement : MonoBehaviour
         PlayerHealth = 100;
         Money = 50;
         GameStarted = false;
-        lvl = 1;
+        lvl = -1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (IsWaveFinished() || !IsWin())
+        if ((IsWaveFinished() || !IsWin()) && IsGameStarted())
         {
             if (lvl < 4)
             {
+                Debug.Log("New Wave !! " + lvl);
                 lvl++;
-                GetComponent<BankBehaviour>().NextWave();
+                TextManagement.instance.UpdateWaveText();
+                Debug.Log("New Wave !! " + lvl);
             }
             else
             {
@@ -89,10 +92,29 @@ public class GameManagement : MonoBehaviour
     {
         GameStarted = true;
     }
+    
+    public static void StartWave()
+    {
+        WaveReady = true;
+    }
+    
+    public static void StopGame()
+    {
+        GameStarted = false;
+    }
+    
+    public static void StopWave()
+    {
+        WaveReady = false;
+    }
 
     public static bool IsGameStarted()
     {
         return GameStarted;
+    }
+    public static bool IsWaveReady()
+    {
+        return WaveReady;
     }
 
     public static void EnemyDie()
@@ -107,7 +129,7 @@ public class GameManagement : MonoBehaviour
 
     public static bool IsWaveFinished()
     {
-        if (EnemyLeft == 0)
+        if (EnemyLeft == 0 && IsGameStarted())
         {
             return IsWin();
         }
@@ -121,7 +143,7 @@ public class GameManagement : MonoBehaviour
     
     public static bool IsWin()
     {
-        if (PlayerHealth <= 0)
+        if (PlayerHealth <= 0 && lvl != 4)
         {
             Debug.Log("Game Over !!");
             return false;
