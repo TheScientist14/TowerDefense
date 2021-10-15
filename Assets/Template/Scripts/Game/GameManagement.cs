@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagement : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class GameManagement : MonoBehaviour
     private static bool GameStarted;
     private static bool WaveReady;
     private static int EnemyLeft;
-    private static int lvl;
+    private static int lvl; // level of the wave in the current level
 
     // Start is called before the first frame update
     void Start()
@@ -148,6 +149,40 @@ public class GameManagement : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+    /*
+     * Scene managing
+     */
+    public static void LoadNextScene()
+    {
+        int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if(activeSceneIndex + 1 >= SceneManager.sceneCountInBuildSettings)
+        {
+            LoadMenuScene();
+        }
+        else
+        {
+            Debug.Log("cc");
+            SceneManager.LoadScene(activeSceneIndex + 1);
+        }
+    }
+
+    public static void LoadMenuScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public static void LoadSceneLevel(int level)
+    {
+        SceneManager.LoadScene(level);
+    }
+
+    // TODO save progression
+    public static void Exit()
+    {
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
 
