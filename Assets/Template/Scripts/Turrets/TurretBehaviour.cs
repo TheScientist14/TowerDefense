@@ -12,6 +12,11 @@ public class TurretBehaviour : MonoBehaviour
     public TurretScriptableObject[] turretStat;
     public int level;
     public AnimationClip firingAnimation;
+    public GameObject rightHand;
+    public GameObject leftHand;
+    public GameObject weaponHandleRight;
+    public GameObject weaponHandleLeft;
+    public float ikWeight = 1f;
 
     private float timer;
 
@@ -30,6 +35,7 @@ public class TurretBehaviour : MonoBehaviour
         trigger.radius = GetRange();
         float ratio = (GetFireRate() * firingAnimation.length);
         animator.SetFloat("SpeedFiring", ratio);
+        weapon.transform.SetParent(transform);
     }
 
     // TODO improve bullet spawn
@@ -39,14 +45,13 @@ public class TurretBehaviour : MonoBehaviour
     {
         if (target != null)
         {
+            transform.LookAt(target.transform);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
             double dist = (canon.transform.position - target.transform.position).magnitude;
             double bulletSpeed = GetBulletSpeed();
             double timeBullet = dist / bulletSpeed;
             Vector3 targetPos = target.transform.position + ((float)timeBullet * targetNavMeshAgent.speed) * target.transform.forward;
-            transform.LookAt(targetPos);
-            Vector3 rot = transform.rotation.eulerAngles;
-            transform.rotation = Quaternion.Euler(0, rot.y, 0);
-            weapon.transform.rotation = Quaternion.Euler(rot.x, rot.y, 0);
+            weapon.transform.LookAt(targetPos);
         }
         else
         {
@@ -66,6 +71,18 @@ public class TurretBehaviour : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
+    }
+
+    void OnAnimatorIK()
+    {
+        animator.SetIKPositionWeight(AvatarIKGoal.RightHand, ikWeight);
+        animator.SetIKPosition(AvatarIKGoal.RightHand, weaponHandleRight.transform.position);
+        animator.SetIKRotationWeight(AvatarIKGoal.RightHand, ikWeight);
+        animator.SetIKRotation(AvatarIKGoal.RightHand, weaponHandleRight.transform.rotation);
+        animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, ikWeight);
+        animator.SetIKPosition(AvatarIKGoal.LeftHand, weaponHandleLeft.transform.position);
+        animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, ikWeight);
+        animator.SetIKRotation(AvatarIKGoal.LeftHand, weaponHandleLeft.transform.rotation);
     }
 
     public void UpgradeTurret()
