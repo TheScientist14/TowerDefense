@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d07ee707ae7b447b33444dde782530, type: 3}
   m_Name: Sniper2
   m_EditorClassIdentifier: 
-  fireRate: 1.5
+  fireRate: 1.4
   damageValue: 7
-  bulletSpeed: 60
+  bulletSpeed: 70
+  bulletPenetration: 1
   range: 100
   price: 40

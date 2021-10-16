@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7089064163880755530}
   - component: {fileID: 51732196583070743}
   - component: {fileID: 5265536209725543185}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 3744510659341930204}
   - component: {fileID: 7217583015721811113}
   - component: {fileID: 2766571711133300718}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2319686566342462928}
   - component: {fileID: 8617255726299884681}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 5100748747501644225}
   - component: {fileID: 430748729503827405}
   - component: {fileID: 8952376365177602104}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 8932496039824772342}
   - component: {fileID: 1538719300551090162}
   - component: {fileID: 4652704172434981440}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -380,7 +380,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyScript: {fileID: 11400000, guid: dab6204717fce3543b283273f186f407, type: 2}
-  helicopter: {fileID: 0}
   healthBar: {fileID: 8617255726299884681}
   canva: {fileID: 7854071739086503808}
 --- !u!195 &5369023361290052238
@@ -480,7 +479,7 @@ GameObject:
   - component: {fileID: 7854071739086503808}
   - component: {fileID: 6564661721380988574}
   - component: {fileID: 7154028312777459278}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +580,7 @@ GameObject:
   - component: {fileID: 862403830289425501}
   - component: {fileID: 9031251679643414989}
   - component: {fileID: 2879144166440712818}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}

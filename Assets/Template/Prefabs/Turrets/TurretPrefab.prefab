@@ -86,6 +86,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eb23f742cfa03e54ab17f931782e8bbc, type: 2}
   - {fileID: 11400000, guid: f551074ef3eca78479f2d23f2447616f, type: 2}
   level: 0
+  firingAnimation: {fileID: -203655887218126122, guid: 14a4ccf8b5409b04c9e2ab3e90f45c97, type: 3}
 --- !u!136 &4123447695447987162
 CapsuleCollider:
   m_ObjectHideFlags: 0

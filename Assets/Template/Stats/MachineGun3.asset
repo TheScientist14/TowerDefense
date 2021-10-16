@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90d07ee707ae7b447b33444dde782530, type: 3}
-  m_Name: Soldier3
+  m_Name: MachineGun3
   m_EditorClassIdentifier: 
-  fireRate: 3
-  damageValue: 4
-  bulletSpeed: 75
-  bulletPenetration: 0
-  range: 30
-  price: 50
+  fireRate: 7
+  damageValue: 3
+  bulletSpeed: 60
+  range: 60
+  price: 90

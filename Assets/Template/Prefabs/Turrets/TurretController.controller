@@ -42,16 +42,16 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 0
+  m_SpeedParameterActive: 1
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: -203655887218126122, guid: 14a4ccf8b5409b04c9e2ab3e90f45c97, type: 3}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: SpeedFiring
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
-  m_TimeParameter: 
+  m_TimeParameter: SpeedFiring
 --- !u!1107 &-2040593595305856406
 AnimatorStateMachine:
   serializedVersion: 6
@@ -88,6 +88,12 @@ AnimatorController:
   m_AnimatorParameters:
   - m_Name: Firing
     m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: SpeedFiring
+    m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0

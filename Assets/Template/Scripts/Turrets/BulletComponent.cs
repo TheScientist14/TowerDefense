@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BulletComponent : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     private int accelerationTimer = 1;
     private int damageValue = 1;
+    private int canGoThrough = 0;
 
     private Rigidbody rb;
 
@@ -22,8 +23,7 @@ public class BulletComponent : MonoBehaviour
     {
         if(accelerationTimer > 0)
         {
-            rb.AddForce(transform.forward * speed * 50f, ForceMode.Acceleration);
-            // 50f to get the same speed value as in the variable
+            rb.AddForce(transform.forward * speed, ForceMode.VelocityChange);
             accelerationTimer--;
         }
     }
@@ -39,9 +39,14 @@ public class BulletComponent : MonoBehaviour
     }
 
     // speed in meter per second
-    public void SetBulletSpeed(int speed)
+    public void SetBulletSpeed(float speed)
     {
         this.speed = speed;
+    }
+
+    public void CanGoThrough(int nb)
+    {
+        canGoThrough = nb;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -49,7 +54,14 @@ public class BulletComponent : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             other.GetComponent<EnemyBehaviour>().GetDamage(damageValue);
-            Destroy(gameObject);
+            if (canGoThrough <= 0)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                canGoThrough--;
+            }
         }
     }
 }

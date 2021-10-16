@@ -81,7 +81,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4652704172434981440, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
       propertyPath: m_Height
-      value: 6
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652704172434981440, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
+      propertyPath: m_Radius
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4652704172434981440, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
       propertyPath: m_Enabled
@@ -89,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4652704172434981440, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
       propertyPath: m_Center.y
-      value: 1.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4652704172434981440, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
       propertyPath: m_IsTrigger
@@ -98,6 +102,10 @@ PrefabInstance:
     - target: {fileID: 5369023361290052238, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
       propertyPath: m_Height
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369023361290052238, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6343995787394240672, guid: 7d4ba76afaaefb14ba06d3b1a8dc6e6c, type: 3}
       propertyPath: m_SizeDelta.x

@@ -11,22 +11,25 @@ public class TurretBehaviour : MonoBehaviour
     public GameObject bullet;
     public TurretScriptableObject[] turretStat;
     public int level;
+    public AnimationClip firingAnimation;
 
-    private BulletComponent bulletBehaviour;
     private float timer;
 
     private GameObject target; // target to fire on
     private NavMeshAgent targetNavMeshAgent;
     private CapsuleCollider trigger;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         timer = 0f;
-        trigger = GetComponent<CapsuleCollider>();
-        trigger.radius = turretStat[level].range;
-        bulletBehaviour = bullet.GetComponent<BulletComponent>();
+        trigger = gameObject.GetComponent<CapsuleCollider>();
+        animator = gameObject.GetComponent<Animator>();
         level = 0;
+        trigger.radius = GetRange();
+        float ratio = (GetFireRate() * firingAnimation.length);
+        animator.SetFloat("SpeedFiring", ratio);
     }
 
     // TODO improve bullet spawn
@@ -37,7 +40,7 @@ public class TurretBehaviour : MonoBehaviour
         if (target != null)
         {
             double dist = (canon.transform.position - target.transform.position).magnitude;
-            double bulletSpeed = bulletBehaviour.speed;
+            double bulletSpeed = GetBulletSpeed();
             double timeBullet = dist / bulletSpeed;
             Vector3 targetPos = target.transform.position + ((float)timeBullet * targetNavMeshAgent.speed) * target.transform.forward;
             transform.LookAt(targetPos);
@@ -47,13 +50,17 @@ public class TurretBehaviour : MonoBehaviour
         }
         else
         {
-            gameObject.GetComponent<Animator>().SetBool("Firing", false);
+            animator.SetBool("Firing", false);
         }
         if(timer <= 0f && target != null)
         {
-            Instantiate(bullet, canon.transform.position, canon.transform.rotation, GameManagement.instance.bulletsContainer.transform);
-            gameObject.GetComponent<Animator>().SetBool("Firing", true);
-            timer = 1f / turretStat[level].fireRate;
+            GameObject firedbullet = Instantiate(bullet, canon.transform.position, canon.transform.rotation, GameManagement.instance.bulletsContainer.transform);
+            BulletComponent firedBulletBehaviour = firedbullet.GetComponent<BulletComponent>();
+            firedBulletBehaviour.SetDamageValue(GetDamage());
+            firedBulletBehaviour.SetBulletSpeed(GetBulletSpeed());
+            firedBulletBehaviour.CanGoThrough(GetBulletPenetration());
+            animator.SetBool("Firing", true);
+            timer = 1f / GetFireRate();
         }
         else
         {
@@ -70,7 +77,9 @@ public class TurretBehaviour : MonoBehaviour
         }
         else
         {
-            this.trigger.radius = turretStat[level].range;
+            trigger.radius = GetRange();
+            float ratio = (GetFireRate() * firingAnimation.length);
+            animator.SetFloat("SpeedFiring", ratio);
         }
     }
 
@@ -109,7 +118,9 @@ public class TurretBehaviour : MonoBehaviour
         }
     }
 
-    // Trivial getters
+    /*
+     * Trivial getters
+     */
     public int GetDamage()
     {
         return turretStat[level].damageValue;
@@ -133,6 +144,11 @@ public class TurretBehaviour : MonoBehaviour
     public int GetPrice()
     {
         return turretStat[level].price;
+    }
+
+    public int GetBulletPenetration()
+    {
+        return turretStat[level].bulletPenetration;
     }
 
     public int GetLevel()
