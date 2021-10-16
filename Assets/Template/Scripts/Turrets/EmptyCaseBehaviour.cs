@@ -68,6 +68,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
             currentTurretBehaviour = currentTurret.GetComponent<TurretBehaviour>();
             GameManagement.RemoveMoney(selectedTurretBehaviour.GetPrice());
             TextManagement.instance.UpdateMoneyText();
+            // should be async ?
             uiStatsBehaviour.UpdateData();
         }
     }
