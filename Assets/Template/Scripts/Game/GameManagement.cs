@@ -23,6 +23,7 @@ public class GameManagement : MonoBehaviour
     private static bool WaveReady;
     private static int EnemyLeft;
     private static int lvl; // level of the wave in the current level
+    private static int waveNb; // level of the wave in the current level
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,8 @@ public class GameManagement : MonoBehaviour
         PlayerHealth = 10;
         Money = 50;
         GameStarted = false;
-        lvl = 0;
+        lvl = 1;
+        waveNb = 0;
         EnemyLeft = -1;
     }
 
@@ -145,12 +147,12 @@ public class GameManagement : MonoBehaviour
 
     public static int GetCurrentLvl()
     {
-        return lvl;
+        return waveNb;
     }
     
     public static bool IsWin()
     {
-        if (PlayerHealth <= 0 && lvl != 4)
+        if (PlayerHealth <= 0 && waveNb != 4)
         {
             Debug.Log("Game Over !!");
             return false;
@@ -168,14 +170,18 @@ public class GameManagement : MonoBehaviour
 
     private static void NextWave()
     {
-        if (lvl < 4)
+        if (waveNb < 4)
         {
-            lvl++;
+            waveNb++;
             TextManagement.instance.UpdateWaveText();
+        }
+        else if (IsWin() && lvl != 2)
+        {
+            LoadNextScene();
+            lvl++;
         }
         else
         {
-            Debug.Log("###################### END GAME ######################");
             endGameEvent.Invoke();
         }
     }
