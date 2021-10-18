@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.53333336
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    accuratePlacement: 1
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -6284,6 +6284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletsContainer: {fileID: 2079368440}
   turretsContainer: {fileID: 500677823}
+  buttonReady: {fileID: 1344817823}
+  endGameCanva: {fileID: 3231595251848903614, guid: 1c4d0367fd2ec02478d6266bc4676b78, type: 3}
 --- !u!4 &1505774789
 Transform:
   m_ObjectHideFlags: 0

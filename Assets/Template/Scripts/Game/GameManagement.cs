@@ -1,15 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using Debug = UnityEngine.Debug;
 
 public class GameManagement : MonoBehaviour
 {
     public GameObject bulletsContainer;
     public GameObject turretsContainer;
+    public GameObject buttonReady;
+    public GameObject endGameCanva;
 
     public static GameManagement instance;
 
+    private static UnityEvent startWaveEvent;
+    private static UnityEvent stopWaveEvent;
+    private static UnityEvent endGameEvent;
     private static int PlayerHealth;
     private static int Money;
     private static bool GameStarted;
@@ -33,29 +41,24 @@ public class GameManagement : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
+        startWaveEvent = new UnityEvent();
+        stopWaveEvent = new UnityEvent();
+        endGameEvent = new UnityEvent();
+        
+        SetEventListener();
+        stopWaveEvent.Invoke();
         PlayerHealth = 100;
         Money = 50;
         GameStarted = false;
-        lvl = -1;
+        lvl = 0;
+        EnemyLeft = -1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((IsWaveFinished() || !IsWin()) && IsGameStarted())
-        {
-            if (lvl < 4)
-            {
-                Debug.Log("New Wave !! " + lvl);
-                lvl++;
-                TextManagement.instance.UpdateWaveText();
-                Debug.Log("New Wave !! " + lvl);
-            }
-            else
-            {
-                Debug.Log("Fin de la partie, Vous avez gagné !!");
-            }
-        }
+        //Debug.Log("Enemies restants : " + EnemyLeft);
+        IsWaveFinished();
     }
 
     public static void GetDamage(int damage)
@@ -106,6 +109,7 @@ public class GameManagement : MonoBehaviour
     public static void StopWave()
     {
         WaveReady = false;
+        startWaveEvent.Invoke();
     }
 
     public static bool IsGameStarted()
@@ -129,9 +133,13 @@ public class GameManagement : MonoBehaviour
 
     public static bool IsWaveFinished()
     {
-        if (EnemyLeft == 0 && IsGameStarted())
+        if (EnemyLeft == 0)
         {
-            return IsWin();
+            Debug.Log("Enemy left == 0 wave finished");
+            stopWaveEvent.Invoke();
+            setEnemyLeft(-1);
+            NextWave();
+            return true;
         }
         return false;
     }
@@ -149,6 +157,27 @@ public class GameManagement : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+    private static void NextWave()
+    {
+        if (lvl < 4)
+        {
+            lvl++;
+            TextManagement.instance.UpdateWaveText();
+        }
+        else
+        {
+            Debug.Log("###################### END GAME ######################");
+            endGameEvent.Invoke();
+        }
+    }
+
+    public void SetEventListener()
+    {
+        startWaveEvent.AddListener(DeactiveReadyButton);
+        stopWaveEvent.AddListener(ActiveReadyButton);
+        endGameEvent.AddListener(LoadSceneEndGame);
     }
 
     /*
@@ -177,6 +206,11 @@ public class GameManagement : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+    
+    public void LoadSceneEndGame()
+    {
+        SceneManager.LoadScene("EndGame");
+    } 
 
     // TODO save progression
     public static void Exit()
@@ -184,5 +218,16 @@ public class GameManagement : MonoBehaviour
         Application.Quit();
         UnityEditor.EditorApplication.isPlaying = false;
     }
+
+    public void ActiveReadyButton()
+    {
+        buttonReady.SetActive(true);
+    }
+    
+    public void DeactiveReadyButton()
+    {
+        buttonReady.SetActive(false);
+    }
+
 }
 
