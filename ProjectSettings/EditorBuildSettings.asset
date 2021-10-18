@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Antoine.unity
     guid: 657806ea658ae784cb0980df06c7273c
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 7d06ca63153abf14e8da20388077b60c
   m_configObjects: {}

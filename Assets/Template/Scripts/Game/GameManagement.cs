@@ -11,7 +11,6 @@ public class GameManagement : MonoBehaviour
     public GameObject bulletsContainer;
     public GameObject turretsContainer;
     public GameObject buttonReady;
-    public GameObject endGameCanva;
 
     public static GameManagement instance;
 
@@ -47,7 +46,7 @@ public class GameManagement : MonoBehaviour
         
         SetEventListener();
         stopWaveEvent.Invoke();
-        PlayerHealth = 100;
+        PlayerHealth = 10;
         Money = 50;
         GameStarted = false;
         lvl = 0;
@@ -57,8 +56,8 @@ public class GameManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("Enemies restants : " + EnemyLeft);
         IsWaveFinished();
+        IsLoose();
     }
 
     public static void GetDamage(int damage)
@@ -159,6 +158,14 @@ public class GameManagement : MonoBehaviour
         return true;
     }
 
+    public void IsLoose()
+    {
+        if (PlayerHealth <=0)
+        {
+            endGameEvent.Invoke();
+        }
+    }
+
     private static void NextWave()
     {
         if (lvl < 4)
@@ -221,12 +228,18 @@ public class GameManagement : MonoBehaviour
 
     public void ActiveReadyButton()
     {
-        buttonReady.SetActive(true);
+        if (buttonReady != null)
+        {
+            buttonReady.SetActive(true);
+        }
     }
     
     public void DeactiveReadyButton()
     {
-        buttonReady.SetActive(false);
+        if (buttonReady != null)
+        {
+            buttonReady.SetActive(false);
+        }
     }
 
 }
