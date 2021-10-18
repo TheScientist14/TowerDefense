@@ -12,8 +12,6 @@ public class TurretBehaviour : MonoBehaviour
     public TurretScriptableObject[] turretStat;
     public int level;
     public AnimationClip firingAnimation;
-    public GameObject rightHand;
-    public GameObject leftHand;
     public GameObject weaponHandleRight;
     public GameObject weaponHandleLeft;
     public float ikWeight = 1f;
@@ -35,7 +33,6 @@ public class TurretBehaviour : MonoBehaviour
         trigger.radius = GetRange();
         float ratio = (GetFireRate() * firingAnimation.length);
         animator.SetFloat("SpeedFiring", ratio);
-        weapon.transform.SetParent(transform);
     }
 
     // TODO improve bullet spawn
