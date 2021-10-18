@@ -30,7 +30,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
     {
         if (!EventSystem.current.IsPointerOverGameObject())
         {
-            if (Selection.instance.GetSelectedTurret() != null)
+            if (Selection.instance.IsTurretSelected())
             {
                 if (currentTurret == null)
                 {
