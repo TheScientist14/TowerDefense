@@ -227,7 +227,6 @@ public class GameManagement : MonoBehaviour
         }
         else
         {
-            Debug.Log("cc");
             SceneManager.LoadScene(activeSceneIndex + 1);
         }
     }
