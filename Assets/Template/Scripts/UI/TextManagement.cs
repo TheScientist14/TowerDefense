@@ -8,6 +8,8 @@ public class TextManagement : MonoBehaviour
 {
     public static TextManagement instance;
     public Slider PlayerHealth;
+    public Image fill;
+    public Gradient gradient;
     public TextMeshProUGUI LifeText;
     public TextMeshProUGUI MoneyText;
     public TextMeshProUGUI WaveText;
@@ -15,6 +17,8 @@ public class TextManagement : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        
+        
     }
 
     // Start is called before the first frame update
@@ -35,6 +39,7 @@ public class TextManagement : MonoBehaviour
     {
         PlayerHealth.maxValue = GameManagement.instance.GetPlayerHealthMax();
         PlayerHealth.value = GameManagement.instance.GetPlayerHealth();
+        fill.color = gradient.Evaluate(PlayerHealth.normalizedValue);
     }
 
     public void UpdateMoneyText()

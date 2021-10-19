@@ -35,7 +35,7 @@ public class GameManagement : MonoBehaviour
         stopWaveEvent = new UnityEvent();
         endGameEvent = new UnityEvent();
         moneyAmountChangedEvent = new UnityEvent();
-        PlayerHealthMax = 50;
+        PlayerHealthMax = 6;
 		// Singleton
         if(instance == null)
         {
