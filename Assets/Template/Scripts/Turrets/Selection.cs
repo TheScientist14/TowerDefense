@@ -11,10 +11,10 @@ public class Selection : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
     private GameObject airStrikeLocation;
-    public bool isAirStriking = false;
-    public float airStrikeTime = 0;
-    public float airStrikeCoolDown = 0;
-    public float airStrikeCount = 3;
+    private bool isAirStriking = false;
+    private float airStrikeTime = 0;
+    private float airStrikeCoolDown = 0;
+    private float airStrikeCount = 3;
     private GameObject beingAirStriked;
 
     public static Selection instance;
