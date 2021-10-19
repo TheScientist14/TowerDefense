@@ -2921,6 +2921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3bde37db5876d43a58caf3590ffb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  airStrikeLocationModel: {fileID: 0}
 --- !u!4 &415153855
 Transform:
   m_ObjectHideFlags: 0
@@ -5056,7 +5057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.838
+      value: 0.864
       objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5064,7 +5065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.509
+      value: 0.507
       objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7592,6 +7593,9 @@ MonoBehaviour:
   bulletsContainer: {fileID: 1649770896}
   turretsContainer: {fileID: 1917629089}
   buttonReady: {fileID: 696153366}
+  moneyAmountChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &989452495
 Transform:
   m_ObjectHideFlags: 0

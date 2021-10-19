@@ -3930,6 +3930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3bde37db5876d43a58caf3590ffb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  airStrikeLocationModel: {fileID: 0}
 --- !u!4 &645731942
 Transform:
   m_ObjectHideFlags: 0
@@ -8814,8 +8815,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8001007745316602581, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
       propertyPath: m_Name
-      value: Bank (1)
+      value: Bank
       objectReference: {fileID: 0}
+    - target: {fileID: 8001007745316602583, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: waves.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 92264969dee4e174684110299c1c3963, type: 2}
+    - target: {fileID: 8001007745316602583, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: waves.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d094852d1e5a864980ee1172d3f5e65, type: 2}
+    - target: {fileID: 8001007745316602583, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: waves.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ad9bf4c230cbea4b812a7db4eef1c56, type: 2}
+    - target: {fileID: 8001007745316602583, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: waves.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5e728499df8dcb04abfdf23ef3487cf6, type: 2}
+    - target: {fileID: 8001007745316602583, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: waves.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: efbfba9685406d74588da6c6d2ff6bc4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
 --- !u!1001 &1267178278
@@ -9128,6 +9149,9 @@ MonoBehaviour:
   bulletsContainer: {fileID: 1103029861}
   turretsContainer: {fileID: 625065591}
   buttonReady: {fileID: 0}
+  moneyAmountChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1289246559
 Transform:
   m_ObjectHideFlags: 0
