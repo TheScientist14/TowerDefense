@@ -39,7 +39,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
         upgradeButtonImageColor = upgradeButtonImage.color;
         cam = Camera.main;
         Hide();
-        GameManagement.moneyAmountChangedEvent.AddListener(OnMoneyChange);
+        GameManagement.instance.moneyAmountChangedEvent.AddListener(OnMoneyChange);
     }
 
     // Update is called once per frame
@@ -81,7 +81,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     {
         if(parentCaseBehaviour.GetCurrentTurret() != null)
         {
-            if(GameManagement.GetMoney() >= parentCaseBehaviour.GetCurrentTurretBehaviour().GetUpgradePrice())
+            if(GameManagement.instance.GetMoney() >= parentCaseBehaviour.GetCurrentTurretBehaviour().GetUpgradePrice())
             {
                 upgradeButtonImage.color = upgradeButtonImageColor;
             }

@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
+[System.Serializable]
 public class Selection : MonoBehaviour
 {
     private GameObject selected;
@@ -10,16 +13,18 @@ public class Selection : MonoBehaviour
     private Camera cam;
     private Ray ray;
     private RaycastHit hit;
-    private GameObject airStrikeLocation;
     private bool isAirStriking = false;
     private float airStrikeTime = 0;
     private float airStrikeCoolDown = 0;
     private float airStrikeCount = 3;
     private GameObject beingAirStriked;
 
+    public GameObject airStrikeLocationModel;
+    private GameObject airStrikeLocation;
+
     public static Selection instance;
 
-    void Start()
+    private void Awake()
     {
         // Singleton
         if(instance == null)
@@ -30,9 +35,14 @@ public class Selection : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
         cam = Camera.main;
-        airStrikeLocation = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-        airStrikeLocation.transform.localScale = new Vector3(10, 1, 10);
+        //airStrikeLocation = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+        //airStrikeLocation.transform.localScale = new Vector3(10, 1, 10);
+        airStrikeLocation = Instantiate(airStrikeLocationModel);
         airStrikeLocation.layer = LayerMask.NameToLayer("Ignore Raycast");
     }
 
@@ -55,7 +65,7 @@ public class Selection : MonoBehaviour
             if (selected != null && !isTurret && !isAirStriking)
             {
                 ray = cam.ScreenPointToRay(Input.mousePosition, Camera.MonoOrStereoscopicEye.Mono);
-                if(Physics.Raycast(ray, out hit)){
+                if(Physics.Raycast(ray, out hit) && !EventSystem.current.IsPointerOverGameObject()){
                     airStrikeLocation.SetActive(true);
                     airStrikeLocation.transform.position = hit.point;
                     if (Input.GetMouseButtonDown(0))
@@ -91,9 +101,9 @@ public class Selection : MonoBehaviour
                 if (airStrikeCount > 0)
                 {
                     airStrikeCount--;
-                    Vector3 horizontalOffSet = Random.insideUnitCircle * 5;
-                    Vector3 verticalOffSet = 40 * Vector3.up;
-                    Instantiate(beingAirStriked, hit.point + verticalOffSet + horizontalOffSet, Quaternion.identity);
+                    Vector2 horizontalOffSet = Random.insideUnitCircle * 5;
+                    Vector3 offSet = new Vector3(horizontalOffSet.x, 40, horizontalOffSet.y);
+                    Instantiate(beingAirStriked, hit.point + offSet, Quaternion.identity);
                     airStrikeTime = 0.5f;
                 }
                 else {
@@ -125,5 +135,10 @@ public class Selection : MonoBehaviour
     public bool IsTurretSelected()
     {
         return (selected != null) && isTurret;
+    }
+
+    private string GetDebuggerDisplay()
+    {
+        return ToString();
     }
 }
