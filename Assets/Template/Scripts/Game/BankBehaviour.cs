@@ -60,7 +60,7 @@ public class BankBehaviour : MonoBehaviour
     {
         for (int i = 0; i < (int)parameters[2]; i++)
         {
-            Instantiate((GameObject)parameters[0], transform.position + transform.forward*6, Quaternion.identity);
+            Instantiate((GameObject)parameters[0], transform.position + transform.forward*18, Quaternion.identity);
             Debug.Log("Spawn : " + (GameObject)parameters[0]);            
             yield return new WaitForSeconds(1/(float)parameters[1]);
         }
