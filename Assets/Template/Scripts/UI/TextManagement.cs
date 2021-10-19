@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextManagement : MonoBehaviour
 {
     public static TextManagement instance;
+    public Slider PlayerHealth;
     public TextMeshProUGUI LifeText;
     public TextMeshProUGUI MoneyText;
     public TextMeshProUGUI WaveText;
@@ -31,7 +33,8 @@ public class TextManagement : MonoBehaviour
 
     public void UpdateLifeText()
     {
-        LifeText.SetText("Life : " + GameManagement.instance.GetPlayerHealth());
+        PlayerHealth.maxValue = GameManagement.instance.GetPlayerHealthMax();
+        PlayerHealth.value = GameManagement.instance.GetPlayerHealth();
     }
 
     public void UpdateMoneyText()

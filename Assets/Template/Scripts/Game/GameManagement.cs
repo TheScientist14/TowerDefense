@@ -21,6 +21,7 @@ public class GameManagement : MonoBehaviour
     public UnityEvent moneyAmountChangedEvent;
     // public UnityEvent lifeChangedEvent;
     private int PlayerHealth;
+    private int PlayerHealthMax;
     private int Money;
     private bool GameStarted;
     private bool WaveReady;
@@ -34,6 +35,7 @@ public class GameManagement : MonoBehaviour
         stopWaveEvent = new UnityEvent();
         endGameEvent = new UnityEvent();
         moneyAmountChangedEvent = new UnityEvent();
+        PlayerHealthMax = 50;
 		// Singleton
         if(instance == null)
         {
@@ -54,7 +56,7 @@ public class GameManagement : MonoBehaviour
     {
         SetEventListener();
         stopWaveEvent.Invoke();
-        PlayerHealth = 10;
+        PlayerHealth = PlayerHealthMax;
         Money = 50;
         GameStarted = false;
         lvl = 1;
@@ -77,6 +79,11 @@ public class GameManagement : MonoBehaviour
     public int GetPlayerHealth()
     {
         return PlayerHealth;
+    }
+    
+    public int GetPlayerHealthMax()
+    {
+        return PlayerHealthMax;
     }
 
     public void AddMoney(int gain)
