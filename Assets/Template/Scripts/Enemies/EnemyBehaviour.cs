@@ -50,9 +50,9 @@ public class EnemyBehaviour : MonoBehaviour
 
         if ( health <= 0)
         {
-            GameManagement.AddMoney(price);
+            GameManagement.instance.AddMoney(price);
             TextManagement.instance.UpdateMoneyText();
-            GameManagement.EnemyDie();
+            GameManagement.instance.EnemyDie();
             Destroy(gameObject);
         }
     }

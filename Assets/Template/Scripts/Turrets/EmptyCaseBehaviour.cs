@@ -57,7 +57,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
     {
         if (currentTurret != null)
         {
-            GameManagement.AddMoney(currentTurretBehaviour.GetSellPrice());
+            GameManagement.instance.AddMoney(currentTurretBehaviour.GetSellPrice());
             uiStatsBehaviour.Hide();
             Destroy(currentTurret);
             TextManagement.instance.UpdateMoneyText();
@@ -68,11 +68,11 @@ public class EmptyCaseBehaviour : MonoBehaviour
     private void BuySelectedTurret()
     {
         TurretBehaviour selectedTurretBehaviour = Selection.instance.GetSelectedTurretBehaviour();
-        if (GameManagement.GetMoney() >= selectedTurretBehaviour.GetPrice())
+        if (GameManagement.instance.GetMoney() >= selectedTurretBehaviour.GetPrice())
         {
             currentTurret = Instantiate(Selection.instance.GetSelectedTurret(), transform.position, Quaternion.identity, GameManagement.instance.turretsContainer.transform);
             currentTurretBehaviour = currentTurret.GetComponent<TurretBehaviour>();
-            GameManagement.RemoveMoney(selectedTurretBehaviour.GetPrice());
+            GameManagement.instance.RemoveMoney(selectedTurretBehaviour.GetPrice());
             TextManagement.instance.UpdateMoneyText();
             // should be async ?
             uiStatsBehaviour.UpdateData();
@@ -85,10 +85,10 @@ public class EmptyCaseBehaviour : MonoBehaviour
         if (!currentTurretBehaviour.IsFullyUpgraded())
         {
             int price = currentTurretBehaviour.GetUpgradePrice();
-            if (GameManagement.GetMoney() >= price)
+            if (GameManagement.instance.GetMoney() >= price)
             {
                 currentTurretBehaviour.UpgradeTurret();
-                GameManagement.RemoveMoney(price);
+                GameManagement.instance.RemoveMoney(price);
                 TextManagement.instance.UpdateMoneyText();
                 uiStatsBehaviour.UpdateData();
             }

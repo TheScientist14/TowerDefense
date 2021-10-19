@@ -16,7 +16,7 @@ public class EndGameScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameManagement.IsWin())
+        if (GameManagement.instance.IsWin())
         {
             textLoose.SetActive(false);
         }
@@ -34,11 +34,11 @@ public class EndGameScript : MonoBehaviour
 
     public static void restart()
     {
-        GameManagement.LoadMenuScene();
+        GameManagement.instance.LoadMenuScene();
     }
 
     public static void exit()
     {
-        GameManagement.Exit();
+        GameManagement.instance.Exit();
     }
 }
