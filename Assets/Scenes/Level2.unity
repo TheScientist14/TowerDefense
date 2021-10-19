@@ -9269,7 +9269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletsContainer: {fileID: 1103029861}
   turretsContainer: {fileID: 625065591}
-  buttonReady: {fileID: 0}
+  buttonReady: {fileID: 1907544337}
   moneyAmountChangedEvent:
     m_PersistentCalls:
       m_Calls: []

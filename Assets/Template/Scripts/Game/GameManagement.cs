@@ -67,8 +67,11 @@ public class GameManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        IsWaveFinished();
-        IsLoose();
+        if (GameStarted)
+        {
+            IsWaveFinished();
+            IsLoose();
+        }
     }
 
     public void GetDamage(int damage)
@@ -168,10 +171,11 @@ public class GameManagement : MonoBehaviour
         return waveNb;
     }
     
-    public  bool IsWin()
+    public bool IsWin()
     {
         if (PlayerHealth <= 0 && waveNb != 4)
         {
+            GameStarted = false;
             Debug.Log("Game Over !!");
             return false;
         }
@@ -233,6 +237,10 @@ public class GameManagement : MonoBehaviour
 
     public void LoadMenuScene()
     {
+        PlayerHealth = PlayerHealthMax;
+        lvl = 1;
+        waveNb = 0;
+        SetMoney(60);
         SceneManager.LoadScene(0);
     }
 
