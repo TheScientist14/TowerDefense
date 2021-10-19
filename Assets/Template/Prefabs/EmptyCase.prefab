@@ -245,6 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiStats: {fileID: 7512154454242147205}
+  takenMaterial: {fileID: 2100000, guid: 8aead9786dd759f4497c0ef970d783b3, type: 2}
+  freeMaterial: {fileID: 2100000, guid: 3e323e54d6d61484aaa4388ce1f1e83a, type: 2}
 --- !u!1 &1269336196578578527
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,10 @@ public class EmptyCaseBehaviour : MonoBehaviour
     public GameObject uiStats;
     private GUI_StatsBehaviour uiStatsBehaviour;
 
+    public Material takenMaterial;
+    public Material freeMaterial;
+    private Renderer renderer;
+
     private GameObject currentTurret;
     private TurretBehaviour currentTurretBehaviour;
 
@@ -16,6 +20,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
     {
         uiStatsBehaviour = uiStats.GetComponent<GUI_StatsBehaviour>();
         uiStatsBehaviour.Hide();
+        renderer = gameObject.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
@@ -56,6 +61,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
             uiStatsBehaviour.Hide();
             Destroy(currentTurret);
             TextManagement.instance.UpdateMoneyText();
+            renderer.material = freeMaterial;
         }
     }
 
@@ -70,6 +76,7 @@ public class EmptyCaseBehaviour : MonoBehaviour
             TextManagement.instance.UpdateMoneyText();
             // should be async ?
             uiStatsBehaviour.UpdateData();
+            renderer.material = takenMaterial;
         }
     }
 
