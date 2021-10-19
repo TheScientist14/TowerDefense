@@ -772,7 +772,7 @@ MonoBehaviour:
   firingAnimation: {fileID: -203655887218126122, guid: 14a4ccf8b5409b04c9e2ab3e90f45c97, type: 3}
   weaponHandleRight: {fileID: 4952238141852018028}
   weaponHandleLeft: {fileID: 8113942326089444213}
-  ikWeight: 1
+  fireFX: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
 --- !u!136 &5443575010372694049
 CapsuleCollider:
   m_ObjectHideFlags: 0

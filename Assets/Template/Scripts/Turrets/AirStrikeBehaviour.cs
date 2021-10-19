@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AirStrikeBehaviour : MonoBehaviour
 {
+    public GameObject explosionFX;
+
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class AirStrikeBehaviour : MonoBehaviour
                 colliders[i].gameObject.GetComponent<EnemyBehaviour>().GetDamage(5);
             }
         }
+        Instantiate(explosionFX, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

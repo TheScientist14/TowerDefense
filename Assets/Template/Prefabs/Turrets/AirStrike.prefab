@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ec665aae6c12748bd9b5dffcc84737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionFX: {fileID: 6029845480860858065, guid: 19e31be8080d21047a0cba444cd9f00f, type: 3}
 --- !u!33 &2599727181557350710
 MeshFilter:
   m_ObjectHideFlags: 0

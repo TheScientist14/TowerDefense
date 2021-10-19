@@ -14,8 +14,9 @@ public class TurretBehaviour : MonoBehaviour
     public AnimationClip firingAnimation;
     public GameObject weaponHandleRight;
     public GameObject weaponHandleLeft;
-    public float ikWeight = 1f;
+    public GameObject fireFX;
 
+    private float ikWeight = 1f;
     private float timer;
 
     private GameObject target; // target to fire on
@@ -65,6 +66,7 @@ public class TurretBehaviour : MonoBehaviour
             firedBulletBehaviour.SetDamageValue(GetDamage());
             firedBulletBehaviour.SetBulletSpeed(GetBulletSpeed());
             firedBulletBehaviour.CanGoThrough(GetBulletPenetration());
+            Instantiate(fireFX, canon.transform);
             animator.SetBool("Firing", true);
             timer = 1f / GetFireRate();
         }

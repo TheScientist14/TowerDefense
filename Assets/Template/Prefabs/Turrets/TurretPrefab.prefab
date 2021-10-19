@@ -117,11 +117,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f551074ef3eca78479f2d23f2447616f, type: 2}
   level: 0
   firingAnimation: {fileID: -203655887218126122, guid: 14a4ccf8b5409b04c9e2ab3e90f45c97, type: 3}
-  rightHand: {fileID: 767331116933659808}
-  leftHand: {fileID: 7362648673296977111}
   weaponHandleRight: {fileID: 2297646367382552425}
   weaponHandleLeft: {fileID: 6552957994189241172}
-  ikWeight: 1
+  fireFX: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
 --- !u!136 &4123447695447987162
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -261,16 +259,6 @@ PrefabInstance:
 --- !u!4 &1480071633542768715 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 743ba8961b71dcf44a0e663fc34794c8, type: 3}
-  m_PrefabInstance: {fileID: 1369371580174405536}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7362648673296977111 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -779793678413495433, guid: 743ba8961b71dcf44a0e663fc34794c8, type: 3}
-  m_PrefabInstance: {fileID: 1369371580174405536}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &767331116933659808 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1848419404482654976, guid: 743ba8961b71dcf44a0e663fc34794c8, type: 3}
   m_PrefabInstance: {fileID: 1369371580174405536}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3654890525614315418

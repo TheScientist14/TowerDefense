@@ -5054,6 +5054,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletsContainer: {fileID: 422880463}
   turretsContainer: {fileID: 1044781385}
+  buttonReady: {fileID: 653614567}
+  moneyAmountChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1168570142
 Transform:
   m_ObjectHideFlags: 0
@@ -8458,6 +8462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3bde37db5876d43a58caf3590ffb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  airStrikeLocationModel: {fileID: 3784388562767572773, guid: adbc446203ce15e43abb814cb956848d, type: 3}
 --- !u!4 &1770633098
 Transform:
   m_ObjectHideFlags: 0
