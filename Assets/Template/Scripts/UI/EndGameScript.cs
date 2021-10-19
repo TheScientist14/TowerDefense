@@ -24,21 +24,13 @@ public class EndGameScript : MonoBehaviour
         {
             textWin.SetActive(false);
         }
+        restartButton.onClick.AddListener(GameManagement.instance.LoadMenuScene);
+        exitButton.onClick.AddListener(GameManagement.instance.Exit);
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public static void restart()
-    {
-        GameManagement.instance.LoadMenuScene();
-    }
-
-    public static void exit()
-    {
-        GameManagement.instance.Exit();
     }
 }
