@@ -177,6 +177,10 @@ public class GameManagement : MonoBehaviour
         }
         else if (IsWin() && lvl != 2)
         {
+            waveNb = 0;
+            SetMoney(60);
+            TextManagement.instance.UpdateMoneyText();
+            TextManagement.instance.UpdateWaveText();
             LoadNextScene();
             lvl++;
         }
