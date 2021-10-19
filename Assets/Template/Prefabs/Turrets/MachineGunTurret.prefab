@@ -770,8 +770,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 94b3a866abc92044b989df83f4d52f5b, type: 2}
   level: 0
   firingAnimation: {fileID: -203655887218126122, guid: 14a4ccf8b5409b04c9e2ab3e90f45c97, type: 3}
-  weaponHandleRight: {fileID: 8113942326089444213}
-  weaponHandleLeft: {fileID: 4952238141852018028}
+  weaponHandleRight: {fileID: 4952238141852018028}
+  weaponHandleLeft: {fileID: 8113942326089444213}
   ikWeight: 1
 --- !u!136 &5443575010372694049
 CapsuleCollider:
@@ -1466,7 +1466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710861824537698638}
   m_Layer: 0
-  m_Name: LeftHandle
+  m_Name: RightHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2256,7 +2256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396164672775512417}
   m_Layer: 0
-  m_Name: RightHandle
+  m_Name: LeftHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

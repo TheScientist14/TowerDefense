@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,18 +15,18 @@ public class GameManagement : MonoBehaviour
 
     public static GameManagement instance;
 
-    private static UnityEvent startWaveEvent;
-    private static UnityEvent stopWaveEvent;
-    private static UnityEvent endGameEvent;
-    public static UnityEvent moneyAmountChangedEvent;
-    // public static UnityEvent lifeChangedEvent;
-    private static int PlayerHealth;
-    private static int Money;
-    private static bool GameStarted;
-    private static bool WaveReady;
-    private static int EnemyLeft;
-    private static int lvl; // level of the wave in the current level
-    private static int waveNb; // level of the wave in the current level
+    private UnityEvent startWaveEvent;
+    private UnityEvent stopWaveEvent;
+    private UnityEvent endGameEvent;
+    public UnityEvent moneyAmountChangedEvent;
+    // public UnityEvent lifeChangedEvent;
+    private int PlayerHealth;
+    private int Money;
+    private bool GameStarted;
+    private bool WaveReady;
+    private int EnemyLeft;
+    private int lvl; // level of the wave in the current level
+    private int waveNb; // level of the wave in the current level
 
     private void Awake()
     {
@@ -33,12 +34,7 @@ public class GameManagement : MonoBehaviour
         stopWaveEvent = new UnityEvent();
         endGameEvent = new UnityEvent();
         moneyAmountChangedEvent = new UnityEvent();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Singleton
+		// Singleton
         if(instance == null)
         {
             instance = this;
@@ -47,10 +43,15 @@ public class GameManagement : MonoBehaviour
         {
             instance.bulletsContainer = bulletsContainer;
             instance.turretsContainer = turretsContainer;
+            instance.buttonReady = buttonReady;
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-        
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         SetEventListener();
         stopWaveEvent.Invoke();
         PlayerHealth = 10;
@@ -68,80 +69,81 @@ public class GameManagement : MonoBehaviour
         IsLoose();
     }
 
-    public static void GetDamage(int damage)
+    public void GetDamage(int damage)
     {
         PlayerHealth -= damage;
     }
 
-    public static int GetPlayerHealth()
+    public int GetPlayerHealth()
     {
         return PlayerHealth;
     }
 
-    public static void AddMoney(int gain)
+    public void AddMoney(int gain)
     {
         Money += gain;
         moneyAmountChangedEvent.Invoke();
     }
 
-    public static void RemoveMoney(int remove)
+    public void RemoveMoney(int remove)
     {
         Money -= remove;
         moneyAmountChangedEvent.Invoke();
     }
 
-    public static int GetMoney()
+    public int GetMoney()
     {
         return Money;
     }
 
-    public static void SetMoney(int moneyToSet)
+    public void SetMoney(int moneyToSet)
     {
         Money = moneyToSet;
         moneyAmountChangedEvent.Invoke();
     }
 
-    public static void StartGame()
+    public void StartGame()
     {
         GameStarted = true;
     }
     
-    public static void StartWave()
+    public void StartWave()
     {
         WaveReady = true;
     }
     
-    public static void StopGame()
+    public void StopGame()
     {
         GameStarted = false;
     }
     
-    public static void StopWave()
+    public void StopWave()
     {
+        Debug.Log("StopWave");
         WaveReady = false;
         startWaveEvent.Invoke();
     }
 
-    public static bool IsGameStarted()
+    public bool IsGameStarted()
     {
         return GameStarted;
     }
-    public static bool IsWaveReady()
+    public bool IsWaveReady()
     {
         return WaveReady;
     }
 
-    public static void EnemyDie()
+    public void EnemyDie()
     {
         EnemyLeft--;
     }
 
-    public static void setEnemyLeft(int enemy)
+    public void setEnemyLeft(int enemy)
     {
         EnemyLeft = enemy;
     }
 
-    public static bool IsWaveFinished()
+    public bool IsWaveFinished()
     {
         if (EnemyLeft == 0)
         {
@@ -154,12 +156,12 @@ public class GameManagement : MonoBehaviour
         return false;
     }
 
-    public static int GetCurrentLvl()
+    public int GetCurrentLvl()
     {
         return waveNb;
     }
     
-    public static bool IsWin()
+    public  bool IsWin()
     {
         if (PlayerHealth <= 0 && waveNb != 4)
         {
@@ -177,7 +179,7 @@ public class GameManagement : MonoBehaviour
         }
     }
 
-    private static void NextWave()
+    private void NextWave()
     {
         if (waveNb < 4)
         {
@@ -209,7 +211,7 @@ public class GameManagement : MonoBehaviour
     /*
      * Scene managing
      */
-    public static void LoadNextScene()
+    public void LoadNextScene()
     {
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if(activeSceneIndex + 1 >= SceneManager.sceneCountInBuildSettings)
@@ -223,12 +225,12 @@ public class GameManagement : MonoBehaviour
         }
     }
 
-    public static void LoadMenuScene()
+    public void LoadMenuScene()
     {
         SceneManager.LoadScene(0);
     }
 
-    public static void LoadSceneLevel(int level)
+    public void LoadSceneLevel(int level)
     {
         SceneManager.LoadScene(level);
     }
@@ -239,7 +241,7 @@ public class GameManagement : MonoBehaviour
     } 
 
     // TODO save progression
-    public static void Exit()
+    public void Exit()
     {
         Application.Quit();
         UnityEditor.EditorApplication.isPlaying = false;
@@ -255,8 +257,10 @@ public class GameManagement : MonoBehaviour
     
     public void DeactiveReadyButton()
     {
+        Debug.Log("Deactive Ready button");
         if (buttonReady != null)
         {
+            Debug.Log("IF Deactive Ready button");
             buttonReady.SetActive(false);
         }
     }

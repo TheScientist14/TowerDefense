@@ -31,16 +31,16 @@ public class TextManagement : MonoBehaviour
 
     public void UpdateLifeText()
     {
-        LifeText.SetText("Life : " + GameManagement.GetPlayerHealth());
+        LifeText.SetText("Life : " + GameManagement.instance.GetPlayerHealth());
     }
 
     public void UpdateMoneyText()
     {
-        MoneyText.SetText("Money : " + GameManagement.GetMoney());
+        MoneyText.SetText("Money : " + GameManagement.instance.GetMoney());
     }
 
     public void UpdateWaveText()
     {
-        WaveText.SetText("Wave : " + (GameManagement.GetCurrentLvl() + 1));
+        WaveText.SetText("Wave : " + (GameManagement.instance.GetCurrentLvl() + 1));
     }
 }

@@ -32,27 +32,27 @@ public class BankBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManagement.IsGameStarted() && GameManagement.IsWaveReady())
+        if (GameManagement.instance.IsGameStarted() && GameManagement.instance.IsWaveReady())
         {
-            GameManagement.setEnemyLeft(waves[GameManagement.GetCurrentLvl()].nbEmenyTief + waves[GameManagement.GetCurrentLvl()].nbEmenyCapo);
-            if (waves[GameManagement.GetCurrentLvl()].nbEmenyTief > 0) // if to check if in the wave we have this type of enemy
+            GameManagement.instance.setEnemyLeft(waves[GameManagement.instance.GetCurrentLvl()].nbEmenyTief + waves[GameManagement.instance.GetCurrentLvl()].nbEmenyCapo);
+            if (waves[GameManagement.instance.GetCurrentLvl()].nbEmenyTief > 0) // if to check if in the wave we have this type of enemy
             {
                 Debug.Log("SpawnEnemy Thief");
                 parametersThief[0] = thief;
-                parametersThief[1] = waves[GameManagement.GetCurrentLvl()].spawnRateThief;
-                parametersThief[2] = waves[GameManagement.GetCurrentLvl()].nbEmenyTief;
+                parametersThief[1] = waves[GameManagement.instance.GetCurrentLvl()].spawnRateThief;
+                parametersThief[2] = waves[GameManagement.instance.GetCurrentLvl()].nbEmenyTief;
                 StartCoroutine("spawn", parametersThief);
             }
-            if (waves[GameManagement.GetCurrentLvl()].nbEmenyCapo > 0)
+            if (waves[GameManagement.instance.GetCurrentLvl()].nbEmenyCapo > 0)
             {
                 Debug.Log("SpawnEnemy Capo");
                 parametersCapo[0] = capo;
-                parametersCapo[1] = waves[GameManagement.GetCurrentLvl()].spawnRateCapo;
-                parametersCapo[2] = waves[GameManagement.GetCurrentLvl()].nbEmenyCapo;
+                parametersCapo[1] = waves[GameManagement.instance.GetCurrentLvl()].spawnRateCapo;
+                parametersCapo[2] = waves[GameManagement.instance.GetCurrentLvl()].nbEmenyCapo;
                 StartCoroutine("spawn", parametersCapo);
             }
-            GameManagement.StopGame();
-            GameManagement.StopWave();
+            //GameManagement.StopGame();
+            GameManagement.instance.StopWave();
         }
     }
 
@@ -60,7 +60,7 @@ public class BankBehaviour : MonoBehaviour
     {
         for (int i = 0; i < (int)parameters[2]; i++)
         {
-            Instantiate((GameObject)parameters[0], transform.position + transform.forward*6, Quaternion.identity);
+            Instantiate((GameObject)parameters[0], transform.position + transform.forward*18, Quaternion.identity);
             Debug.Log("Spawn : " + (GameObject)parameters[0]);            
             yield return new WaitForSeconds(1/(float)parameters[1]);
         }
