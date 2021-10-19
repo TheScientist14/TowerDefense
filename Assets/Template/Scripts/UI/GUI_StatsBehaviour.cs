@@ -6,6 +6,9 @@ using TMPro;
 
 public class GUI_StatsBehaviour : MonoBehaviour
 {
+    // tracking the opened menu so that we close it before opening another one
+    private static GUI_StatsBehaviour opened;
+
     public GameObject parentCase;
     public TextMeshProUGUI turretName;
     public TextMeshProUGUI damageStat;
@@ -18,19 +21,25 @@ public class GUI_StatsBehaviour : MonoBehaviour
     private EmptyCaseBehaviour parentCaseBehaviour;
     private Image upgradeButtonImage;
     private Color upgradeButtonImageColor;
+    private Color noUpgradeButtonImageColor = Color.grey;
 
     private static Vector2 shift = new Vector2(200, 0);
     private Vector3 screenPoint;
     private Camera cam;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         parentCaseBehaviour = parentCase.GetComponent<EmptyCaseBehaviour>();
         upgradeButtonImage = upgradeButton.GetComponent<Image>();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         upgradeButtonImageColor = upgradeButtonImage.color;
         cam = Camera.main;
         Hide();
+        GameManagement.moneyAmountChangedEvent.AddListener(OnMoneyChange);
     }
 
     // Update is called once per frame
@@ -51,16 +60,47 @@ public class GUI_StatsBehaviour : MonoBehaviour
         if (!turret.IsFullyUpgraded())
         {
             upgradePrice.text = turret.GetUpgradePrice().ToString();
-            upgradeButtonImage.color = upgradeButtonImageColor;
         }
         else
         {
-            upgradeButtonImage.color = Color.grey;
+            upgradePrice.text = "\u221E";
         }
+        OnMoneyChange();
     }
 
     public void Hide()
     {
-        gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
+        if (opened == this)
+        {
+            opened = null;
+        }
+    }
+
+    public void OnMoneyChange()
+    {
+        if(parentCaseBehaviour.GetCurrentTurret() != null)
+        {
+            if(GameManagement.GetMoney() >= parentCaseBehaviour.GetCurrentTurretBehaviour().GetUpgradePrice())
+            {
+                upgradeButtonImage.color = upgradeButtonImageColor;
+            }
+            else
+            {
+                upgradeButtonImage.color = noUpgradeButtonImageColor;
+            }
+        }
+    }
+
+    private void OnEnable()
+    {
+        if(parentCaseBehaviour.GetCurrentTurret() != null)
+        {
+            if(opened != null)
+            {
+                opened.gameObject.SetActive(false);
+            }
+            opened = this;
+        }
     }
 }

@@ -10,26 +10,27 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     public Material takenMaterial;
     public Material freeMaterial;
-    private Renderer renderer;
+    private new Renderer renderer;
 
     private GameObject currentTurret;
     private TurretBehaviour currentTurretBehaviour;
 
+    private void Awake()
+    {
+        uiStatsBehaviour = uiStats.GetComponent<GUI_StatsBehaviour>();
+        renderer = gameObject.GetComponent<Renderer>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        uiStatsBehaviour = uiStats.GetComponent<GUI_StatsBehaviour>();
         uiStatsBehaviour.Hide();
-        renderer = gameObject.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
-
-
 
     private void OnMouseDown()
     {
@@ -74,7 +75,6 @@ public class EmptyCaseBehaviour : MonoBehaviour
             currentTurretBehaviour = currentTurret.GetComponent<TurretBehaviour>();
             GameManagement.RemoveMoney(selectedTurretBehaviour.GetPrice());
             TextManagement.instance.UpdateMoneyText();
-            // should be async ?
             uiStatsBehaviour.UpdateData();
             renderer.material = takenMaterial;
         }
@@ -104,22 +104,4 @@ public class EmptyCaseBehaviour : MonoBehaviour
     {
         return currentTurretBehaviour;
     }
-
-/*    public void ShowGUI(bool show)
-    {
-        if (show)
-        {
-            uiStats.SetActive(true);
-        }
-    }*/
-
-/*    private void OnMouseOver()
-    {
-        overing = true;
-    }
-
-    private void OnMouseExit()
-    {
-        overing = false;
-    }*/
 }

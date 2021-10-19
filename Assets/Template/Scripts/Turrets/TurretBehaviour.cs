@@ -23,12 +23,16 @@ public class TurretBehaviour : MonoBehaviour
     private CapsuleCollider trigger;
     private Animator animator;
 
+    private void Awake()
+    {
+        trigger = gameObject.GetComponent<CapsuleCollider>();
+        animator = gameObject.GetComponent<Animator>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         timer = 0f;
-        trigger = gameObject.GetComponent<CapsuleCollider>();
-        animator = gameObject.GetComponent<Animator>();
         level = 0;
         trigger.radius = GetRange();
         float ratio = (GetFireRate() * firingAnimation.length);
@@ -188,7 +192,7 @@ public class TurretBehaviour : MonoBehaviour
         }
         else
         {
-            return 0;
+            return int.MaxValue;
         }
     }
 

@@ -17,6 +17,8 @@ public class GameManagement : MonoBehaviour
     private static UnityEvent startWaveEvent;
     private static UnityEvent stopWaveEvent;
     private static UnityEvent endGameEvent;
+    public static UnityEvent moneyAmountChangedEvent;
+    // public static UnityEvent lifeChangedEvent;
     private static int PlayerHealth;
     private static int Money;
     private static bool GameStarted;
@@ -24,6 +26,14 @@ public class GameManagement : MonoBehaviour
     private static int EnemyLeft;
     private static int lvl; // level of the wave in the current level
     private static int waveNb; // level of the wave in the current level
+
+    private void Awake()
+    {
+        startWaveEvent = new UnityEvent();
+        stopWaveEvent = new UnityEvent();
+        endGameEvent = new UnityEvent();
+        moneyAmountChangedEvent = new UnityEvent();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -40,10 +50,6 @@ public class GameManagement : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-
-        startWaveEvent = new UnityEvent();
-        stopWaveEvent = new UnityEvent();
-        endGameEvent = new UnityEvent();
         
         SetEventListener();
         stopWaveEvent.Invoke();
@@ -75,11 +81,13 @@ public class GameManagement : MonoBehaviour
     public static void AddMoney(int gain)
     {
         Money += gain;
+        moneyAmountChangedEvent.Invoke();
     }
 
     public static void RemoveMoney(int remove)
     {
         Money -= remove;
+        moneyAmountChangedEvent.Invoke();
     }
 
     public static int GetMoney()
@@ -90,6 +98,7 @@ public class GameManagement : MonoBehaviour
     public static void SetMoney(int moneyToSet)
     {
         Money = moneyToSet;
+        moneyAmountChangedEvent.Invoke();
     }
 
     public static void StartGame()
