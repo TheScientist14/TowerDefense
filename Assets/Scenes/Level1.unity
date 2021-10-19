@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 41e663e31be365740b2f7d05783e702c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1570,6 +1570,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3bde37db5876d43a58caf3590ffb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAirStriking: 0
+  airStrikeTime: 0
+  airStrikeCoolDown: 0
+  airStrikeCount: 3
 --- !u!4 &415153855
 Transform:
   m_ObjectHideFlags: 0
@@ -4753,7 +4757,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 415153854}
         m_TargetAssemblyTypeName: Selection, Assembly-CSharp
-        m_MethodName: SelectTurret
+        m_MethodName: Select
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 7121241242747016715, guid: ed4459037877cbd4a9f61bb16568f82b, type: 3}
@@ -5014,10 +5018,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 415153854}
         m_TargetAssemblyTypeName: Selection, Assembly-CSharp
-        m_MethodName: SelectTurret
+        m_MethodName: Select
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7121241242747016715, guid: ed4459037877cbd4a9f61bb16568f82b, type: 3}
+          m_ObjectArgument: {fileID: 6668774146759304490, guid: 5c279592fc7e00d4a91ab0c4abdfff4d, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8153,7 +8157,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 415153854}
         m_TargetAssemblyTypeName: Selection, Assembly-CSharp
-        m_MethodName: SelectTurret
+        m_MethodName: Select
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 2837796277725434696, guid: 225d96365b9de7e49ad18462767be8b5, type: 3}
@@ -9693,7 +9697,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 415153854}
         m_TargetAssemblyTypeName: Selection, Assembly-CSharp
-        m_MethodName: SelectTurret
+        m_MethodName: Select
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 6184563625263476915, guid: 55a70f9c465a09c40bfed15caf01e653, type: 3}
