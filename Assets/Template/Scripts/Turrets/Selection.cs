@@ -11,10 +11,10 @@ public class Selection : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
     private GameObject airStrikeLocation;
-    private bool isAirStriking = false;
-    private float airStrikeTime = 0;
-    private float airStrikeCoolDown = 0;
-    private float airStrikeCount = 3;
+    public bool isAirStriking = false;
+    public float airStrikeTime = 0;
+    public float airStrikeCoolDown = 0;
+    public float airStrikeCount = 3;
     private GameObject beingAirStriked;
 
     public static Selection instance;
@@ -64,6 +64,7 @@ public class Selection : MonoBehaviour
                         airStrikeCoolDown = 10f;
                         beingAirStriked = selected;
                         airStrikeLocation.SetActive(false);
+                        airStrikeCount = 3;
                     }
                 }
                 else
@@ -91,7 +92,7 @@ public class Selection : MonoBehaviour
                 {
                     airStrikeCount--;
                     Vector3 horizontalOffSet = Random.insideUnitCircle * 5;
-                    Vector3 verticalOffSet = 10 * Vector3.up;
+                    Vector3 verticalOffSet = 40 * Vector3.up;
                     Instantiate(beingAirStriked, hit.point + verticalOffSet + horizontalOffSet, Quaternion.identity);
                     airStrikeTime = 0.5f;
                 }
