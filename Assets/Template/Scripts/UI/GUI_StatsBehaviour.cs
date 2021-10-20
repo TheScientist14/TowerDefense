@@ -23,7 +23,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     private Color upgradeButtonImageColor;
     private Color noUpgradeButtonImageColor = Color.grey;
 
-    private static Vector2 shift = new Vector2(200, 0);
+    private static Vector2 shift = new Vector2(150, 0);
     private Vector3 screenPoint;
     private Camera cam;
 
@@ -46,7 +46,14 @@ public class GUI_StatsBehaviour : MonoBehaviour
     void Update()
     {
         screenPoint = cam.WorldToScreenPoint(parentCase.transform.position);
-        transform.position = new Vector2(screenPoint.x, screenPoint.y) + shift;
+        if(screenPoint.x < cam.pixelWidth / 2)
+        {
+            transform.position = new Vector2(screenPoint.x, screenPoint.y) + shift;
+        }
+        else
+        {
+            transform.position = new Vector2(screenPoint.x, screenPoint.y) - shift;
+        }
     }
 
     public void UpdateData()

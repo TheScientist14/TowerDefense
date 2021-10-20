@@ -10,6 +10,8 @@ public class EmptyCaseBehaviour : MonoBehaviour
 
     public Material takenMaterial;
     public Material freeMaterial;
+    public Material takenHoveredMaterial;
+    public Material freeHoveredMaterial;
     private new Renderer renderer;
 
     private GameObject currentTurret;
@@ -103,5 +105,29 @@ public class EmptyCaseBehaviour : MonoBehaviour
     public TurretBehaviour GetCurrentTurretBehaviour()
     {
         return currentTurretBehaviour;
+    }
+
+    void OnMouseEnter()
+    {
+        if(currentTurret == null)
+        {
+            renderer.material = freeHoveredMaterial;
+        }
+        else
+        {
+            renderer.material = takenHoveredMaterial;
+        }
+    }
+
+    void OnMouseExit()
+    {
+        if (currentTurret == null)
+        {
+            renderer.material = freeMaterial;
+        }
+        else
+        {
+            renderer.material = takenMaterial;
+        }
     }
 }

@@ -23,14 +23,17 @@ public class AirStrikeBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 7.5f);
-        for (int i = 0; i < colliders.Length; i++)
+        if (!other.isTrigger)
         {
-            if (colliders[i].gameObject.CompareTag("Enemy")){
-                colliders[i].gameObject.GetComponent<EnemyBehaviour>().GetDamage(5);
+            Collider[] colliders = Physics.OverlapSphere(transform.position, 7.5f);
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                if (colliders[i].gameObject.CompareTag("Enemy")){
+                    colliders[i].gameObject.GetComponent<EnemyBehaviour>().GetDamage(5);
+                }
             }
+            Instantiate(explosionFX, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
-        Instantiate(explosionFX, transform.position, Quaternion.identity);
-        Destroy(gameObject);
     }
 }
