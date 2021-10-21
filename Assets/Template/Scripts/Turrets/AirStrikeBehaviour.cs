@@ -5,8 +5,9 @@ using UnityEngine;
 public class AirStrikeBehaviour : MonoBehaviour
 {
     public GameObject explosionFX;
-
+    public AudioClip explosion;
     private Rigidbody rb;
+    private AudioListener listener;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,9 @@ public class AirStrikeBehaviour : MonoBehaviour
                 }
             }
             Instantiate(explosionFX, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            GetComponent<AudioSource>().PlayOneShot(explosion);
+            Destroy(gameObject, explosion.length);
         }
     }
+    
 }

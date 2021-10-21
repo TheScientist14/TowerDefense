@@ -102,7 +102,7 @@ public class Selection : MonoBehaviour
                 {
                     airStrikeCount--;
                     Vector2 horizontalOffSet = Random.insideUnitCircle * 5;
-                    Vector3 offSet = new Vector3(horizontalOffSet.x, 40, horizontalOffSet.y);
+                    Vector3 offSet = new Vector3(horizontalOffSet.x, 80, horizontalOffSet.y);
                     Instantiate(beingAirStriked, hit.point + offSet, Quaternion.identity);
                     airStrikeTime = 0.5f;
                 }
