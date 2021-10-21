@@ -2448,6 +2448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12965413244508540}
   - component: {fileID: 6920161817577420268}
+  - component: {fileID: 3674587880229656489}
   m_Layer: 0
   m_Name: Soldier_body
   m_TagString: Untagged
@@ -2481,7 +2482,7 @@ SkinnedMeshRenderer:
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 2
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
@@ -2574,6 +2575,26 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000071167946, y: -0.3625276, z: -0.0046492815}
     m_Extent: {x: 1.9229716, y: 1.566776, z: 0.3853397}
   m_DirtyAABB: 0
+--- !u!259 &3674587880229656489
+LightProbeProxyVolume:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8497845431589594814}
+  m_Enabled: 1
+  m_BoundingBoxMode: 1
+  m_ResolutionX: 8
+  m_ResolutionY: 8
+  m_ResolutionZ: 8
+  m_ResolutionProbesPerUnit: 0.25
+  m_BoundingBoxSize: {x: Infinity, y: Infinity, z: Infinity}
+  m_BoundingBoxOrigin: {x: 0, y: 0, z: 0}
+  m_ResolutionMode: 1
+  m_ProbePositionMode: 0
+  m_RefreshMode: 0
+  m_QualityMode: 1
+  m_DataFormat: 0
 --- !u!1 &8562993322857077461
 GameObject:
   m_ObjectHideFlags: 0

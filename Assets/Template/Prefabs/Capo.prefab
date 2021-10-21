@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!259 &4880893951293549283
+LightProbeProxyVolume:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064528285192708282}
+  m_Enabled: 1
+  m_BoundingBoxMode: 1
+  m_ResolutionX: 8
+  m_ResolutionY: 8
+  m_ResolutionZ: 8
+  m_ResolutionProbesPerUnit: 0.25
+  m_BoundingBoxSize: {x: Infinity, y: Infinity, z: Infinity}
+  m_BoundingBoxOrigin: {x: 0, y: 0, z: 0}
+  m_ResolutionMode: 1
+  m_ProbePositionMode: 0
+  m_RefreshMode: 0
+  m_QualityMode: 1
+  m_DataFormat: 0
+--- !u!259 &6945823284859704598
+LightProbeProxyVolume:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064528285192708286}
+  m_Enabled: 1
+  m_BoundingBoxMode: 1
+  m_ResolutionX: 8
+  m_ResolutionY: 8
+  m_ResolutionZ: 8
+  m_ResolutionProbesPerUnit: 0.25
+  m_BoundingBoxSize: {x: Infinity, y: Infinity, z: Infinity}
+  m_BoundingBoxOrigin: {x: 0, y: 0, z: 0}
+  m_ResolutionMode: 1
+  m_ProbePositionMode: 0
+  m_RefreshMode: 0
+  m_QualityMode: 1
+  m_DataFormat: 0
 --- !u!1001 &4064528285192807960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,8 +115,26 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13700002, guid: 6996385895b383749b266464bf872c69, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700006, guid: 6996385895b383749b266464bf872c69, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6996385895b383749b266464bf872c69, type: 3}
+--- !u!1 &4064528285192708282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 6996385895b383749b266464bf872c69, type: 3}
+  m_PrefabInstance: {fileID: 4064528285192807960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4064528285192708286 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 6996385895b383749b266464bf872c69, type: 3}
+  m_PrefabInstance: {fileID: 4064528285192807960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5484065736231758347
 PrefabInstance:
   m_ObjectHideFlags: 0
