@@ -3803,6 +3803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   airStrikeLocationModel: {fileID: 3784388562767572773, guid: adbc446203ce15e43abb814cb956848d, type: 3}
+  cooldownText: {fileID: 1364551385}
   cooldown: {fileID: 1393906628}
 --- !u!4 &415153855
 Transform:
@@ -10212,7 +10213,6 @@ MonoBehaviour:
   LifeText: {fileID: 697890082}
   MoneyText: {fileID: 237971935}
   WaveText: {fileID: 574242054}
-  nbAirStrike: {fileID: 0}
 --- !u!114 &1149403554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12076,7 +12076,7 @@ GameObject:
   - component: {fileID: 1364551386}
   - component: {fileID: 1364551385}
   m_Layer: 5
-  m_Name: AirStrikePrice
+  m_Name: AirStrikeCooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
