@@ -373,6 +373,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -451,9 +459,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -516,9 +532,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -586,9 +610,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -666,7 +698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_RootOrder
@@ -926,9 +958,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -1003,6 +1043,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -1092,7 +1140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -1162,7 +1210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -1229,6 +1277,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -1323,7 +1379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -1390,6 +1446,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -1481,7 +1545,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &203721603
 Transform:
@@ -1512,9 +1576,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -1589,6 +1661,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -1936,9 +2016,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -2054,6 +2142,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bank
       objectReference: {fileID: 0}
+    - target: {fileID: 8001007745316602581, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604875316915903547, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605081193643075875, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f12ec1205a5ac4485c321e55360666, type: 3}
 --- !u!4 &255682183 stripped
@@ -2068,9 +2168,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -2140,6 +2248,30 @@ PrefabInstance:
     - target: {fileID: 126966, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
       propertyPath: m_RootOrder
@@ -2268,9 +2400,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -2423,7 +2563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -2493,7 +2633,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &304533581
 Transform:
@@ -2579,9 +2719,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -2649,9 +2797,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -2714,9 +2870,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -2784,9 +2948,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -3074,9 +3246,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -3154,7 +3334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_RootOrder
@@ -3214,9 +3394,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -3294,7 +3482,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &400018322
 Transform:
@@ -3380,9 +3568,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -3557,9 +3753,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -3637,7 +3841,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &433072431
 Transform:
@@ -3865,7 +4069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 8a74d4154e3078a498c1bf96dc3d1660, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8a74d4154e3078a498c1bf96dc3d1660, type: 3}
       propertyPath: m_RootOrder
@@ -3925,9 +4129,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -3990,9 +4202,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -4065,7 +4285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -4125,9 +4345,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -4331,6 +4559,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -4405,9 +4641,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -4661,9 +4905,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -4788,9 +5040,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -4865,6 +5125,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -5074,9 +5342,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -5410,6 +5686,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5563,6 +5847,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -5649,6 +5941,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5705,6 +6021,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -73.177
       objectReference: {fileID: 0}
+    - target: {fileID: 631676070007857684, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734836665313047331, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002988794507309394, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982605979744645673, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527404057790097551, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831538404489211999, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983511189204187256, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593112832182179862, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821235836067523649, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875266111568557889, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
 --- !u!1001 &692380165
@@ -5714,9 +6070,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1010821444}
     m_Modifications:
+    - target: {fileID: 1026490736275818, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_Name
       value: bench prefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4488567837450824, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_RootOrder
@@ -5865,7 +6229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -5987,9 +6351,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -6201,7 +6573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -6263,6 +6635,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -6431,7 +6811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -6527,9 +6907,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -6664,7 +7052,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &754502042
 Transform:
@@ -6750,9 +7138,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -6820,9 +7216,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -6885,9 +7289,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -7035,7 +7447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_RootOrder
@@ -7095,9 +7507,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -7227,9 +7647,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -7297,9 +7725,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -7429,9 +7865,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -7506,6 +7950,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -7591,7 +8043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c123f92dda3cc22459ede19497c88734, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c123f92dda3cc22459ede19497c88734, type: 3}
       propertyPath: m_RootOrder
@@ -7796,6 +8248,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -7936,9 +8396,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -8008,6 +8476,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -8087,9 +8563,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1010821444}
     m_Modifications:
+    - target: {fileID: 1026490736275818, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_Name
       value: bench prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4488567837450824, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_RootOrder
@@ -8181,7 +8665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -8290,9 +8774,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -8372,6 +8864,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -8454,7 +8954,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1010821444
 Transform:
@@ -8556,6 +9056,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -8634,9 +9142,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -8704,9 +9220,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -8784,7 +9308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -8990,9 +9514,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -9055,9 +9587,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -9130,7 +9670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -9252,9 +9792,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1010821444}
     m_Modifications:
+    - target: {fileID: 1026490736275818, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_Name
       value: bench prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4488567837450824, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_RootOrder
@@ -9393,9 +9941,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -9626,6 +10182,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -9704,9 +10268,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -9784,7 +10356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -9918,6 +10490,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -10000,6 +10580,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10078,9 +10666,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -10161,6 +10757,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -10217,6 +10837,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -10.227
       objectReference: {fileID: 0}
+    - target: {fileID: 631676070007857684, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734836665313047331, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002988794507309394, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982605979744645673, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527404057790097551, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831538404489211999, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983511189204187256, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593112832182179862, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821235836067523649, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875266111568557889, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
 --- !u!1001 &1223474981
@@ -10236,7 +10896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -10301,9 +10961,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -10378,6 +11046,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -10467,7 +11143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -10534,7 +11210,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1286385749
 Transform:
@@ -10589,6 +11265,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -10672,6 +11356,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -10754,6 +11446,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10810,6 +11526,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 61.003
       objectReference: {fileID: 0}
+    - target: {fileID: 631676070007857684, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734836665313047331, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002988794507309394, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982605979744645673, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527404057790097551, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831538404489211999, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983511189204187256, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593112832182179862, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821235836067523649, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875266111568557889, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
 --- !u!1001 &1318087459
@@ -10826,6 +11582,30 @@ PrefabInstance:
     - target: {fileID: 126966, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9c91ecea7f7dce04facaeb11c977e102, type: 3}
       propertyPath: m_RootOrder
@@ -10899,6 +11679,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -11058,6 +11846,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -11136,9 +11932,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -11380,6 +12184,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -11555,7 +12367,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1405242116
 Transform:
@@ -11638,9 +12450,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -11715,6 +12535,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -11802,6 +12630,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11858,6 +12710,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -41.758
       objectReference: {fileID: 0}
+    - target: {fileID: 631676070007857684, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734836665313047331, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002988794507309394, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982605979744645673, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527404057790097551, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831538404489211999, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983511189204187256, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593112832182179862, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821235836067523649, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875266111568557889, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
 --- !u!4 &1428828820 stripped
@@ -11872,9 +12764,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -12016,6 +12916,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -12317,9 +13225,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1010821444}
     m_Modifications:
+    - target: {fileID: 1026490736275818, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_Name
       value: bench prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228088659953116, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4488567837450824, guid: 80c5916b9606ce646be16611d9a06d13, type: 3}
       propertyPath: m_RootOrder
@@ -12391,9 +13307,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -12461,9 +13385,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -12538,6 +13470,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -12627,7 +13567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -12692,9 +13632,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -12864,7 +13812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -12924,9 +13872,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -13071,6 +14027,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -13381,9 +14345,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -13508,9 +14480,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -13712,9 +14692,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -13849,9 +14837,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -13914,9 +14910,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -14228,9 +15232,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -14310,7 +15322,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 119
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1905460673
 Transform:
@@ -14366,9 +15378,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -14502,6 +15522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Straight 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b4923c0dba942fa43a6c6e6831a89113, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b4923c0dba942fa43a6c6e6831a89113, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -14586,9 +15610,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -14661,7 +15693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: de7d72739316cac4eae2ef92efa78c8d, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: de7d72739316cac4eae2ef92efa78c8d, type: 3}
       propertyPath: m_RootOrder
@@ -14792,6 +15824,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 203721603}
     m_Modifications:
+    - target: {fileID: 105996, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 131374, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 132248, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 149150, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 174236, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 181422, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
       propertyPath: m_Name
       value: Car 2
@@ -14799,6 +15851,10 @@ PrefabInstance:
     - target: {fileID: 181422, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 181422, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 424520, guid: 8a6f09027b5c26b4b8d2f6d00dbce6d1, type: 3}
       propertyPath: m_RootOrder
@@ -14950,7 +16006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23337dac036abd34499f9f5131a19858, type: 3}
       propertyPath: m_RootOrder
@@ -15017,6 +16073,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -15109,6 +16173,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -15198,7 +16270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1adf648894424ae47bca5445562efba8, type: 3}
       propertyPath: m_RootOrder
@@ -15346,6 +16418,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15431,6 +16511,14 @@ PrefabInstance:
     - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
@@ -15518,6 +16606,14 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3359062824597744544, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015218995640646572, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4038878805418607935, guid: d693281ca21b3054ea4ae4a503ca3275, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -15592,9 +16688,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -15719,9 +16823,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
@@ -15797,6 +16909,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 126966, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 157202, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 168356, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 172316, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 181728, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 185230, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 420152, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15853,6 +16989,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -31.891
       objectReference: {fileID: 0}
+    - target: {fileID: 631676070007857684, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734836665313047331, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002988794507309394, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982605979744645673, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527404057790097551, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831538404489211999, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983511189204187256, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6593112832182179862, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821235836067523649, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875266111568557889, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ad696eabe698df4fad70faa58c383bf, type: 3}
 --- !u!1001 &2139614489
@@ -15862,9 +17038,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1405242116}
     m_Modifications:
+    - target: {fileID: 1261490130844430, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_Name
       value: WalkWay 5 prefab (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282587026986886, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4497011438508190, guid: 7446a392a730ac14d9cc70d21cf7ace0, type: 3}
       propertyPath: m_RootOrder
