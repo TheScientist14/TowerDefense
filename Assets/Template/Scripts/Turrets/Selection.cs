@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 [System.Serializable]
@@ -21,6 +22,7 @@ public class Selection : MonoBehaviour
 
     public GameObject airStrikeLocationModel;
     private GameObject airStrikeLocation;
+    public Slider cooldown;
 
     public static Selection instance;
 
@@ -58,6 +60,7 @@ public class Selection : MonoBehaviour
         if(airStrikeCoolDown > 0f)
         {
             airStrikeCoolDown -= Time.deltaTime;
+            cooldown.value -= Time.deltaTime;
         }
         else
         {
@@ -72,6 +75,8 @@ public class Selection : MonoBehaviour
                     {
                         isAirStriking = true;
                         airStrikeCoolDown = 10f;
+                        cooldown.maxValue = 10f;
+                        cooldown.value = 10f;
                         beingAirStriked = selected;
                         airStrikeLocation.SetActive(false);
                         airStrikeCount = 3;
