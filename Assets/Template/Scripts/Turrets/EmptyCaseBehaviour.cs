@@ -111,7 +111,10 @@ public class EmptyCaseBehaviour : MonoBehaviour
     {
         if(currentTurret == null)
         {
-            renderer.material = freeHoveredMaterial;
+            if(Selection.instance.GetSelectedTurretBehaviour() != null)
+            {
+                renderer.material = freeHoveredMaterial;
+            }
         }
         else
         {
