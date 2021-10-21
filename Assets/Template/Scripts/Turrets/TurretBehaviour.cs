@@ -70,7 +70,7 @@ public class TurretBehaviour : MonoBehaviour
             firedBulletBehaviour.CanGoThrough(GetBulletPenetration());
             Instantiate(fireFX, canon.transform);
             animator.SetBool("Firing", true);
-            clip = Random.Range(0, clips.Length + 1);
+            clip = Random.Range(0, clips.Length);
             GetComponent<AudioSource>().clip = clips[clip];
             GetComponent<AudioSource>().Play();
             timer = 1f / GetFireRate();
