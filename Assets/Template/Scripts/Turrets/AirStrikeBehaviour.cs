@@ -26,7 +26,7 @@ public class AirStrikeBehaviour : MonoBehaviour
     {
         if (!other.isTrigger)
         {
-            Collider[] colliders = Physics.OverlapSphere(transform.position, 7.5f);
+            Collider[] colliders = Physics.OverlapSphere(transform.position, 5f);
             for (int i = 0; i < colliders.Length; i++)
             {
                 if (colliders[i].gameObject.CompareTag("Enemy")){
