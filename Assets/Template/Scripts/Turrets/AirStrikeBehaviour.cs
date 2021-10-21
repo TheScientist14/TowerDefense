@@ -7,7 +7,6 @@ public class AirStrikeBehaviour : MonoBehaviour
     public GameObject explosionFX;
     public AudioClip explosion;
     private Rigidbody rb;
-    private AudioListener listener;
 
     // Start is called before the first frame update
     void Start()

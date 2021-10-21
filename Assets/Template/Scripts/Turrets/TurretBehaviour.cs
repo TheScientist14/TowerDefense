@@ -15,6 +15,8 @@ public class TurretBehaviour : MonoBehaviour
     public GameObject weaponHandleRight;
     public GameObject weaponHandleLeft;
     public GameObject fireFX;
+    public AudioClip[] clips;
+    private int clip;
 
     private float ikWeight = 1f;
     private float timer;
@@ -68,6 +70,8 @@ public class TurretBehaviour : MonoBehaviour
             firedBulletBehaviour.CanGoThrough(GetBulletPenetration());
             Instantiate(fireFX, canon.transform);
             animator.SetBool("Firing", true);
+            clip = Random.Range(0, clips.Length);
+            GetComponent<AudioSource>().clip = clips[clip];
             GetComponent<AudioSource>().Play();
             timer = 1f / GetFireRate();
         }

@@ -774,6 +774,10 @@ MonoBehaviour:
   weaponHandleRight: {fileID: 4952238141852018028}
   weaponHandleLeft: {fileID: 8113942326089444213}
   fireFX: {fileID: 100014, guid: 5332791ebce075d4a9e56f4581e7fb47, type: 3}
+  clips:
+  - {fileID: 8300000, guid: 5d6c81ce119b4be4289ca3126283a972, type: 3}
+  - {fileID: 8300000, guid: 1e48698cebb3df34cacb11f197d0a4aa, type: 3}
+  - {fileID: 8300000, guid: 9476ba9e22ac67e4fb083c80acd73a29, type: 3}
 --- !u!136 &5443575010372694049
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -819,7 +823,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8602b7d5cd15c1943a50aa53f171c8cf, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.317
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -827,8 +831,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 35.5
+  MaxDistance: 279.36
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -863,7 +867,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -878,7 +882,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.093888886
       inSlope: 0
       outSlope: 0
       tangentMode: 0
