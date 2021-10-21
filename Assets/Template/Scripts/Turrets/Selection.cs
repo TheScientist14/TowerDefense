@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -22,6 +23,7 @@ public class Selection : MonoBehaviour
 
     public GameObject airStrikeLocationModel;
     private GameObject airStrikeLocation;
+    public TextMeshProUGUI cooldownText;
     public Slider cooldown;
 
     public static Selection instance;
@@ -66,9 +68,11 @@ public class Selection : MonoBehaviour
         {
             airStrikeCoolDown -= Time.deltaTime;
             cooldown.value -= Time.deltaTime;
+            cooldownText.SetText((int) cooldown.value + "s");
         }
         else
         {
+            cooldownText.SetText("");
             // displaying air strike
             if (selected != null && !isTurret && !isAirStriking)
             {
