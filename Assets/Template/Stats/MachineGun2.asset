@@ -15,5 +15,6 @@ MonoBehaviour:
   fireRate: 6
   damageValue: 2
   bulletSpeed: 60
-  range: 55
-  price: 65
+  bulletPenetration: 0
+  range: 20
+  price: 130

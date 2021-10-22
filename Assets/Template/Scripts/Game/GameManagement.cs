@@ -14,7 +14,7 @@ public class GameManagement : MonoBehaviour
 
     public static GameManagement instance;
 
-    private UnityEvent startWaveEvent;
+    public UnityEvent startWaveEvent;
     private UnityEvent stopWaveEvent;
     private UnityEvent endGameEvent;
     public UnityEvent moneyAmountChangedEvent;

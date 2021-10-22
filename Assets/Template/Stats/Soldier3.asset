@@ -17,4 +17,4 @@ MonoBehaviour:
   bulletSpeed: 75
   bulletPenetration: 0
   range: 30
-  price: 50
+  price: 100

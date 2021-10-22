@@ -36,7 +36,7 @@ public class GUI_StatsBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        upgradeButtonImageColor = upgradeButtonImage.color;
+        upgradeButtonImageColor = Color.green;
         cam = Camera.main;
         Hide();
         GameManagement.instance.moneyAmountChangedEvent.AddListener(OnMoneyChange);

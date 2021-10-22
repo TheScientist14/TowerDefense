@@ -50,9 +50,7 @@ public class Selection : MonoBehaviour
         airStrikeLocation.layer = LayerMask.NameToLayer("Ignore Raycast");
         
         airStrikeLocation.SetActive(false);
-        airStrikeCoolDown = 25f;
-        cooldown.maxValue = airStrikeCoolDown;
-        cooldown.value = airStrikeCoolDown;
+		GameManagement.instance.startWaveEvent.AddListener(Cooldown);
     }
 
     void Update()
@@ -83,9 +81,7 @@ public class Selection : MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         isAirStriking = true;
-                        airStrikeCoolDown = 25f;
-                        cooldown.maxValue = airStrikeCoolDown;
-                        cooldown.value = airStrikeCoolDown;
+                        Cooldown();
                         beingAirStriked = selected;
                         airStrikeLocation.SetActive(false);
                         airStrikeCount = 3;
@@ -155,4 +151,11 @@ public class Selection : MonoBehaviour
     {
         return ToString();
     }
+	
+	public void Cooldown()
+	{
+		airStrikeCoolDown = 15f;
+        cooldown.maxValue = airStrikeCoolDown;
+        cooldown.value = airStrikeCoolDown;
+	}
 }
