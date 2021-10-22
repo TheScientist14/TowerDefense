@@ -5,7 +5,6 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using Debug = UnityEngine.Debug;
 
 public class GameManagement : MonoBehaviour
 {
@@ -129,7 +128,6 @@ public class GameManagement : MonoBehaviour
     
     public void StopWave()
     {
-        Debug.Log("StopWave");
         WaveReady = false;
         startWaveEvent.Invoke();
     }
@@ -157,7 +155,6 @@ public class GameManagement : MonoBehaviour
     {
         if (EnemyLeft == 0)
         {
-            Debug.Log("Enemy left == 0 wave finished");
             stopWaveEvent.Invoke();
             setEnemyLeft(-1);
             NextWave();
@@ -176,7 +173,6 @@ public class GameManagement : MonoBehaviour
         if (PlayerHealth <= 0 && waveNb != 4)
         {
             GameStarted = false;
-            Debug.Log("Game Over !!");
             return false;
         }
         return true;
@@ -258,7 +254,6 @@ public class GameManagement : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 
     public void ActiveReadyButton()
@@ -271,10 +266,8 @@ public class GameManagement : MonoBehaviour
     
     public void DeactiveReadyButton()
     {
-        Debug.Log("Deactive Ready button");
         if (buttonReady != null)
         {
-            Debug.Log("IF Deactive Ready button");
             buttonReady.SetActive(false);
         }
     }
